@@ -1,0 +1,156 @@
+/* 
+    Created on : 2017/05/14, 1:10:58
+    Author     : okamoto
+*/
+
+.header {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 150px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    
+    z-index: 500;
+}
+
+.header__cacDiscription {
+    position: absolute;
+    font-family: "Rounded Mplus 1c";
+    color: #6a6a6a;
+    font-size: 15px;
+    top: 10px;
+    left: 10px;
+}
+
+.header__cacLogo {
+    position: relative;
+    width: 250px;
+    height: 100px;
+    background-image: url('../img/all/logo01.png');
+    background-size: cover;
+    top: 10px;
+    margin: 0 auto;
+}
+
+.header__Link {
+    position: relative;
+    cursor: pointer;
+    font-family: "Rounded Mplus 1c";
+    color: #545454;
+    font-size: 16px;
+    margin-left: 50px;
+    top: 10px;
+}
+.header__Link:hover {
+    color: #0096ff;
+}
+
+
+.mainTitle {
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    width: 100%;
+    height: 550px;
+    text-align: center;
+    
+    background-color: gray;
+    
+    z-index: 400;
+}
+.mainTitle__titleEnglish {
+    position: relative;
+    top: 170px;
+    font-family: "Sawarabi Mincho";
+    color: #ffffff;
+    font-size: 80px;
+}
+.mainTitle__titleJapanese {
+    position: relative;
+    top: 150px;
+    font-family: "Sawarabi Mincho";
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.mainMenu {
+    position: absolute;
+    top: 700px;
+    left: 0px;
+    width: 100%;
+    height: 1200px;
+    z-index: 300;
+}
+.mainMenu__aboutLink {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 400px;
+    background-color: #ffffff;
+}
+.mainMenu__aboutLink__discription {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 33.3%;
+    height: 400px;
+    background-color: #95df3f;
+}
+.mainMenu__aboutLink__image {
+    position: absolute;
+    top: 0px;
+    left: 33.3%;
+    width: 66.6%;
+    height: 400px;
+    background-color: lightgray;
+}
+.mainMenu__aboutLink__square {
+    position: absolute;
+    top: 350px;
+    left: -60px;
+    width: 130px;
+    height: 100px;
+    background-color: #95df3f;
+    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.mainMenu__diaryLink {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 400px;
+    background-color: #ffffff;
+}
+.mainMenu__diaryLink__discription {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 33.3%;
+    height: 400px;
+    background-color: #95df3f;
+}
+.mainMenu__diaryLink__image {
+    position: absolute;
+    top: 0px;
+    left: 33.3%;
+    width: 66.6%;
+    height: 400px;
+    background-color: lightgray;
+}
+.mainMenu__diaryLink__square {
+    position: absolute;
+    top: 350px;
+    left: -60px;
+    width: 130px;
+    height: 100px;
+    background-color: #95df3f;
+    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(45deg);
+}
