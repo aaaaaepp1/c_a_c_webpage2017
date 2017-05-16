@@ -3,50 +3,6 @@
     Author     : okamoto
 */
 
-.header {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 150px;
-    background-color: #ffffff;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-    
-    z-index: 500;
-}
-
-.header__cacDiscription {
-    position: absolute;
-    font-family: "Rounded Mplus 1c";
-    color: #6a6a6a;
-    font-size: 15px;
-    top: 10px;
-    left: 10px;
-}
-
-.header__cacLogo {
-    position: relative;
-    width: 250px;
-    height: 100px;
-    background-image: url('../img/all/logo01.png');
-    background-size: cover;
-    top: 10px;
-    margin: 0 auto;
-}
-
-.header__Link {
-    position: relative;
-    cursor: pointer;
-    font-family: "Rounded Mplus 1c";
-    color: #545454;
-    font-size: 16px;
-    margin-left: 50px;
-    top: 10px;
-}
-.header__Link:hover {
-    color: #0096ff;
-}
-
 
 .mainTitle {
     position: absolute;
@@ -55,8 +11,10 @@
     width: 100%;
     height: 550px;
     text-align: center;
-    
+    background-image: url('../img/top/mainTitle.png');
+    background-size: cover;
     background-color: gray;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.8);
     
     z-index: 400;
 }
@@ -65,6 +23,7 @@
     top: 170px;
     font-family: "Sawarabi Mincho";
     color: #ffffff;
+    text-shadow: 1px 1px 7px rgba(0,0,0,0.5);
     font-size: 80px;
 }
 .mainTitle__titleJapanese {
@@ -72,6 +31,7 @@
     top: 150px;
     font-family: "Sawarabi Mincho";
     color: #ffffff;
+    text-shadow: 1px 1px 7px rgba(0,0,0,0.5);
     font-size: 40px;
 }
 
@@ -82,6 +42,8 @@
     width: 100%;
     height: 1200px;
     z-index: 300;
+    
+    cursor: pointer;
 }
 .mainMenu__aboutLink {
     position: absolute;
@@ -91,66 +53,126 @@
     height: 400px;
     background-color: #ffffff;
 }
-.mainMenu__aboutLink__discription {
+.mainMenu__projectLink {
     position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 33.3%;
-    height: 400px;
-    background-color: #95df3f;
-}
-.mainMenu__aboutLink__image {
-    position: absolute;
-    top: 0px;
-    left: 33.3%;
-    width: 66.6%;
-    height: 400px;
-    background-color: lightgray;
-}
-.mainMenu__aboutLink__square {
-    position: absolute;
-    top: 350px;
-    left: -60px;
-    width: 130px;
-    height: 100px;
-    background-color: #95df3f;
-    transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(45deg);
-}
-
-.mainMenu__diaryLink {
-    position: absolute;
-    top: 0px;
+    top: 400px;
     left: 0px;
     width: 100%;
     height: 400px;
     background-color: #ffffff;
 }
-.mainMenu__diaryLink__discription {
+.mainMenu__diaryLink {
+    position: absolute;
+    top: 800px;
+    left: 0px;
+    width: 100%;
+    height: 400px;
+    background-color: #ffffff;
+}
+.mainMenu__discriptionLeft {
+    position: absolute;
+    top: 0px;
+    left: 66.6%;
+    width: 33.3%;
+    height: 400px;
+}
+.mainMenu__discriptionRight {
     position: absolute;
     top: 0px;
     left: 0px;
     width: 33.3%;
     height: 400px;
-    background-color: #95df3f;
 }
-.mainMenu__diaryLink__image {
+.mainMenu__imageLeft {
     position: absolute;
     top: 0px;
     left: 33.3%;
     width: 66.6%;
     height: 400px;
     background-color: lightgray;
+    background-size: cover;
+    background-position: center center;
 }
-.mainMenu__diaryLink__square {
+.mainMenu__imageRight {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 66.6%;
+    height: 400px;
+    background-color: lightgray;
+    background-size: cover;
+    background-position: center center;
+}
+.mainMenu__squareLeft {
     position: absolute;
     top: 350px;
-    left: -60px;
+    left: -100px;
     width: 130px;
     height: 100px;
-    background-color: #95df3f;
-    transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+}
+.mainMenu__squareRight {
+    position: absolute;
+    top: 350px;
+    left: -30px;
+    width: 130px;
+    height: 100px;
+    transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.mainDiary {
+    position: absolute;
+    top: 1900px;
+    left: 0px;
+    width: 100%;
+    height: 700px;
+    z-index: 350;
+    
+    background-color: #f4f4f4;
+}
+.mainDiary__separater {
+    position: relative;
+    top: 50px;
+    left: 50%;
+    width: 1px;
+    height: 600px;
+    background-color: #9c9c9c;
+}
+.mainDiary__title {
+    position: relative;
+    top: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #545454;
+    font-size: 35px;
+    text-align: center;
+    margin: 0 auto;
+}
+.mainDiary__twitter {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 50%;
+    text-align: center;
+    height: 700px;
+}
+.mainDiary__diary {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 700px;
+    //background-color: red;
+}
+.mainDiary__diary--logo{
+    
+}
+.mainDiary__diary--contents {
+    
+}
+.mainDiary__moreButton {
+    
 }

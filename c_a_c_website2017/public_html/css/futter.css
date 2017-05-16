@@ -1,0 +1,15 @@
+/* 
+    Created on : 2017/05/17, 2:27:34
+    Author     : okamoto
+*/
+
+.futter {
+    position: absolute;
+    left: 0px;
+    top: 2600px;
+    width: 100%;
+    height: 400px;
+    background-color: #9c9c9c;
+    
+    z-index: 500;
+}

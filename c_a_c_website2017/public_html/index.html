@@ -12,13 +12,22 @@ and open the template in the editor.
         
         <!-- links for css-->
         <link href="css/main.css" rel="stylesheet" type="text/css"/>
+        <link href="css/header.css" rel="stylesheet" type="text/css"/>
+        <link href="css/futter.css" rel="stylesheet" type="text/css"/>
         
         <!-- import fonts -->
         <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        
+        <!-- import other plugins -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         
     </head>
     <body>
+        
+        <!-- start header -->
+        
         <div class="header">
             <div class="header__cacDiscription">京都産業大学　文化団体連盟　電子計算機応用部</div>
             <div class="header__cacLogo"></div>
@@ -33,6 +42,8 @@ and open the template in the editor.
             </div>
         </div>
         
+        <!-- end header, start main contents -->
+        
         <div class="mainTitle">
             <div class="mainTitle__titleEnglish">Beyond your Creation</div>
             <div class="mainTitle__titleJapanese">「作るだけ」で、終わらせない</div>
@@ -40,11 +51,42 @@ and open the template in the editor.
         
         <div class="mainMenu">
             <div class="mainMenu__aboutLink">
-                <div class="mainMenu__aboutLink__discription">aa</div>
-                <div class="mainMenu__aboutLink__image">
-                    <div class="mainMenu__aboutLink__square"></div>
+                <div class="mainMenu__discriptionRight" style="background-color: #bedf69;">
+                    about
                 </div>
+                <div class="mainMenu__imageLeft" style="background-image: url('img/top/mainMenu_about.png');"><div class="mainMenu__squareLeft" style="background-color: #bedf69;"></div></div>
             </div>
+            
+            <div class="mainMenu__projectLink">
+                <div class="mainMenu__imageRight" style="background-image: url('img/top/mainMenu_project.png');"></div>
+                <div class="mainMenu__discriptionLeft" style="background-color: #69abdf;">
+                    project
+                    <div class="mainMenu__squareRight" style="background-color: #69abdf;"></div>
+                </div>
+                
+            </div>
+            
+            <div class="mainMenu__diaryLink">
+                <div class="mainMenu__discriptionRight" style="background-color: #d069df;">
+                    diary
+                </div>
+                <div class="mainMenu__imageLeft" style="background-image: url('img/top/mainMenu_diary.png');"><div class="mainMenu__squareLeft" style="background-color: #d069df;"></div></div>
+            </div>
+        </div>
+        
+        <div class="mainDiary">
+            <div class="mainDiary__separater"></div>
+            <div class="mainDiary__diary">
+                <div class="mainDiary__title">Diary</div>
+            </div>
+            <div class="mainDiary__twitter">
+                <div class="mainDiary__title">Twitter</div>
+            </div>
+            
+        </div>
+        
+        <div class="futter">
+            futter
         </div>
     </body>
 </html>
