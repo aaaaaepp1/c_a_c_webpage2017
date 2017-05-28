@@ -14,7 +14,7 @@ and open the template in the editor.
     height: 100%;
     top: 0px;
     left: 0px;
-    background-image: url('../img/about/backgroundImg.jpg');
+    background-image: url('../img/about/backgroundImg.png');
     background-size: cover;
     background-position: center center;
 }
@@ -48,14 +48,16 @@ and open the template in the editor.
 .aboutProfile__title--main {
     position: relative;
     top: 25px;
-    font-family: "Sawarabi Mincho";
+    font-family: "Noto Sans Japanese";
+    font-weight: 300;
     color: #545454;
     font-size: 30px;
 }
 .aboutProfile__title--sub {
     position: relative;
     top: 25px;
-    font-family: "Sawarabi Mincho";
+    font-family: "Noto Sans Japanese";
+    font-weight: 200;
     color: #545454;
     font-size: 20px;
     margin-left: 10px;
@@ -96,6 +98,7 @@ and open the template in the editor.
     top: 10px;
     left: 0px;
     font-family: "Rounded Mplus 1c";
+    font-weight: 600;
     color: #545454;
     font-size: 18px;
 }
@@ -105,6 +108,7 @@ and open the template in the editor.
     left: 150px;
     width: 350px;
     font-family: "Rounded Mplus 1c";
+    font-weight: 400;
     color: #545454;
     font-size: 16px;
     text-align: left;

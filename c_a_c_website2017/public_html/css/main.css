@@ -3,6 +3,9 @@
     Author     : okamoto
 */
 
+a {
+    text-decoration: none;
+}
 
 .mainTitle {
     position: absolute;
@@ -245,7 +248,8 @@
     position: absolute;
     top: 25px;
     left: 150px;
-    font-family: "Rounded Mplus 1c";
+    font-family: "Noto Sans Japanese";
+    font-weight: 600;
     color: #545454;
     font-size: 20px;
 }
@@ -307,22 +311,20 @@
     left: 0px;
     top: 50px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8);
 }
-
 .subPageTitle {
     position: relative;
     top: 50px;
-    font-family: "Rounded Mplus 1c";
-    color: #545454;
+    font-family: "Noto Sans Japanese";
+    font-weight: 100;
     font-size: 45px;
     margin: 0 auto;
 }
 
 .subPageSentence {
     position: relative;
-    top: 10px;
+    top: 40px;
     font-family: "Rounded Mplus 1c";
-    color: #545454;
+    font-weight: 200;
     font-size: 17px;
 }
