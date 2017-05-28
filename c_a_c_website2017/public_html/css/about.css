@@ -1,0 +1,121 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017/05/28, 16:29:05
+    Author     : okamoto
+*/
+
+.aboutBackgroundImage {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-image: url('../img/about/backgroundImg.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.aboutHeadSentence {
+    position: absolute;
+    top: 230px;
+    left: 0px;
+    width: 100%;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.aboutProfile {
+    position: absolute;
+    top: 830px;
+    left: 0px;
+    width: 100%;
+    height: 1000px;
+    background-color: rgba(255, 255, 255, 1.0);
+    text-align: center;
+}
+.aboutProfile__title {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+}
+.aboutProfile__title--main {
+    position: relative;
+    top: 25px;
+    font-family: "Sawarabi Mincho";
+    color: #545454;
+    font-size: 30px;
+}
+.aboutProfile__title--sub {
+    position: relative;
+    top: 25px;
+    font-family: "Sawarabi Mincho";
+    color: #545454;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.aboutProfile__information {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 900px;
+    //background-color: blue;
+}
+.aboutProfile__information__leftField {
+    position: absolute;
+    top: 25px;
+    left: calc(50% - 500px);
+    width: 500px;
+    height: 850px;
+    //background-color: gray;
+}
+.aboutProfile__information__rightField {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    width: 500px;
+    height: 850px;
+    //background-color: lightgray;
+}
+.aboutProfile__information--cell {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    //background-color: gray;
+}
+.aboutProfile__information--title {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    font-family: "Rounded Mplus 1c";
+    color: #545454;
+    font-size: 18px;
+}
+.aboutProfile__information--sentence {
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    width: 350px;
+    font-family: "Rounded Mplus 1c";
+    color: #545454;
+    font-size: 16px;
+    text-align: left;
+    //background-color: blue;
+}
+.aboutProfile__information--separator{
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    width: 50%;
+    height: 1px;
+    background-color: #c2c2c2;
+    
+}

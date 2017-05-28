@@ -274,7 +274,7 @@
     left: 20%;
     width: 60%;
     height: 1px;
-    background-color: #9c9c9c;
+    background-color: #c2c2c2;
 }
 .mainDiary__moreButton {
     position: absolute;
@@ -298,4 +298,31 @@
 .mainDiary__moreButton:hover {
     background-color: #545454;
     color: #f4f4f4;
+}
+
+.subPageHeader {
+    position: absolute;
+    width: 100%;
+    height: 180px;
+    left: 0px;
+    top: 50px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.subPageTitle {
+    position: relative;
+    top: 50px;
+    font-family: "Rounded Mplus 1c";
+    color: #545454;
+    font-size: 45px;
+    margin: 0 auto;
+}
+
+.subPageSentence {
+    position: relative;
+    top: 10px;
+    font-family: "Rounded Mplus 1c";
+    color: #545454;
+    font-size: 17px;
 }

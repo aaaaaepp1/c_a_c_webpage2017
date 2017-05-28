@@ -4,7 +4,12 @@
  * and open the template in the editor.
  */
 
+//define functions which fire when page is scrolled
+window.onscroll = function() {
+    
+};
 
+//functions for main menu on the index
 function hoverMainMenu(idName, hover) {
     //define id name
     var imgIdName = 'mainMenu__' + idName + 'Link';
@@ -31,5 +36,4 @@ function hoverMainMenu(idName, hover) {
         backgroundColor: moreButtonColor,
         color: moreButtonTextColor
     }, 700, 'easeOutQuint');
-    console.log(moreButtonColor);
 }
