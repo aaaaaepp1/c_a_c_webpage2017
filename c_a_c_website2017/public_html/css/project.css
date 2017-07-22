@@ -19,3 +19,84 @@ and open the template in the editor.
     background-size: cover;
     background-position: center center;
 }
+
+
+
+.projectContents__background {
+    position: absolute;
+    width: 100%;
+    height: 1550px;
+    left: 0px;
+    top: 230px;
+    background-color: rgba(255, 255, 255, 1.0);
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+}
+
+.projectContents__background--frame {
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    left: calc(50% - 500px);
+    top: 73px;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+}
+
+.projectContents__cell--base {
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+    background-color: rgb(212, 212, 212);
+    position: absolute;
+    //left: calc(50% - 500px);
+    //top: calc(0 * 440px);
+    width: 300px;
+    height: 300px;
+}
+
+.projectContents__cell--img {
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 300px;
+    height: 230px;
+}
+
+.projectContents__pageMenu--back {
+    position: absolute;
+    //left: calc(50% - 100px);
+    top: 1380px;
+    //width: 1000px;
+    height: 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.projectContents__pageMenu--cellSquare {
+    display: table-cell;
+    position: relative;
+    background-color: rgba(0, 160, 233, 1.0);
+    //top: 0px;
+    //left: 0px;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    //margin: 0 auto;
+}
+
+.projectContents__pageMenu--cellRec {
+    position: relative;
+    background-color: rgba(0, 160, 233, 1.0);
+    width: 70px;
+    height: 50px;
+    margin-left: 10px;
+    //margin: 0 auto;
+}

@@ -114,6 +114,7 @@ and open the template in the editor.
     text-align: left;
     //background-color: blue;
 }
+
 .aboutProfile__information--separator{
     position: absolute;
     top: 100%;
