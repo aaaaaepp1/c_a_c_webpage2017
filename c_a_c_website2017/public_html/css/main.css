@@ -102,11 +102,11 @@ a {
     left: 40%;
     width: 20%;
     height: 120px;
-    //background-color: #ffffff;
     background-size: contain;
     background-position: bottom center;
     background-repeat: no-repeat;
     z-index: 241;
+    //background-color: #ffffff;
 }
 .mainMenu__discriptionTitle {
     position: relative;
