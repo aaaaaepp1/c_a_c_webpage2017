@@ -317,7 +317,7 @@ a {
     position: relative;
     top: 50px;
     font-family: "Noto Sans Japanese";
-    font-weight: 100;
+    font-weight: 500;
     font-size: 45px;
     margin: 0 auto;
 }
@@ -326,6 +326,6 @@ a {
     position: relative;
     top: 40px;
     font-family: "Rounded Mplus 1c";
-    font-weight: 200;
+    font-weight: 400;
     font-size: 17px;
 }
