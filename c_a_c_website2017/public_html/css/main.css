@@ -311,6 +311,7 @@ a {
     left: 0px;
     top: 50px;
     text-align: center;
+    z-index: 0;
 }
 .subPageTitle {
     position: relative;
