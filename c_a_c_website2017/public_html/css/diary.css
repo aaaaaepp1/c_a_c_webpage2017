@@ -20,6 +20,151 @@ and open the template in the editor.
     background-position: center center;
 }
 
+.diaryContents__cell--frame {
+    position: relative;
+    display: inline-table;
+    width: 325px;
+    height: 400px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+    z-index: 100;
+}
+
+.diaryContents__cell--img {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    
+}
+
+h2.diary {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-family: "Noto Sans Japanese";
+    font-size: 20px;
+    width: 680px;
+    font-weight: 700;
+    color: #545454;
+    background: linear-gradient(transparent 90%, #0096ff 70%);
+}
+
+p.diary {
+    display: inline-block;
+    font-family: "Noto Sans Japanese";
+    font-size: 13px;
+    color: #494949;
+    margin-left: 10px;
+}
+
+.diaryContents__cell--categoryFrame {
+    position: absolute;
+    width: 320px;
+    height: 20px;
+    top: 220px;
+    padding: 0px 10px;
+}
+
+.diaryContents__cell_categoryCell {
+    position: relative;
+    display: inline-table;
+    
+    height: 20px;
+    top: 0px;
+    font-family: "Noto Sans Japanese";
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+    padding: 0px 10px;
+    background-color: #eca41f;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;	
+    -moz-border-radius: 3px;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+}
+
+h1.cellTitle {
+    position: relative;
+    margin-top: 250px;
+    margin-bottom: -2px;
+    padding: 0px 10px;
+    font-family: "Noto Sans Japanese";
+    font-size: 20px;
+    font-weight: 700;
+    color: #545454;
+}
+h1.cellTitle:hover {
+    color: #0096ff;
+}
+
+.diaryContents__cell--tag {
+    position: relative;
+    display: inline-block;
+    top: 0px;
+    left: 10px;
+    margin-right: 10px;
+    /*background-color: #eca41f;*/
+    font-family: "Noto Sans Japanese";
+    font-size: 12px;
+    font-weight: 700;
+    color: #8c8b8b;
+}
+.diaryContents__cell--tag:hover {
+    color: #0096ff;
+}
+
+.diaryContents__menuBar--base {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    top: 0px;
+    left: 0px;
+    margin-bottom: 45px;
+    background-color: #545454;
+    
+}
+
+.diaryContents__menuBar--frame {
+    position: absolute;
+    display: inline-block;
+    width: 1000px;
+    height: 50px;
+    top: 0px;
+    left: calc(50% - 500px);
+    text-align: left;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+}
+
+.diaryContents__menuBar--cell {
+    position: relative;
+    display: inline-table;
+    height: 40px;
+    background-color: #545454;
+    padding: 0px 20px;
+    margin: 0px -3px;
+    line-height: 43px;
+    font-family: "Noto Sans Japanese";
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+}
+.diaryContents__menuBar--cell:hover {
+    background-color: #0096ff;
+}
+
 
 
 
@@ -52,9 +197,9 @@ and open the template in the editor.
 .eachDiaryContents--back {
     position: relative;
     background-color: white;
-    width: calc(100% + 16px);
-    top: 230px;
-    left: -4px;
+    width: calc(100% + 17px);
+    margin-top: 230px;
+    left: -8px;
 }
 
 .eachDiaryContents--frame {
@@ -67,10 +212,32 @@ and open the template in the editor.
     border-color: rgb(55, 55, 55);*/
 }
 
+.eachDiaryContents--sentence {
+    display: table-cell;
+    position: relative;
+    width: 700px;
+    left: 0px;
+    top: 0px;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+}
+
+.eachDiaryContents--subMenu {
+    display: table-cell;
+    position: relative;
+    width: 300px;
+    left: 0px;
+    top: 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);
+}
+
 .eachDiaryContents--month {
     position: relative;
     display: inline-block;
-    margin-top: 45px;
+    margin-top: 0px;
     font-family: 'Architects Daughter', cursive;
     font-size: 40px;
     color: #545454;
@@ -112,7 +279,7 @@ and open the template in the editor.
     border-color: rgb(55, 55, 55);*/
 }
 
-h1 {
+h1.eachDiary {
     display: inline;
     position: relative;
     left: 20px;
@@ -123,7 +290,7 @@ h1 {
     font-size: 35px;
 }
 
-h2 {
+h2.eachDiary {
     padding: 0.25em 0.5em;
     font-family: "Noto Sans Japanese";
     font-size: 20px;
@@ -135,7 +302,7 @@ h2 {
     border-left: solid 10px #0096ff;
 }
 
-h3 {
+h3.eachDiary {
     position: relative;
     padding-left: 1.2em;/*アイコン分のスペース*/
     line-height: 1.4;
@@ -145,7 +312,7 @@ h3 {
     color: #494949;
     margin-bottom: -10px;
 }
-h3:before{
+h3.eachDiary:before{
     font-family: FontAwesome;
     content: "・";
     position: absolute;
@@ -155,10 +322,12 @@ h3:before{
     color: #0096ff
 }
 
-p {
+p.eachDiary {
+    display: inline-block;
     font-family: "Noto Sans Japanese";
     font-size: 16px;
     color: #494949;
+    margin-left: 20px;
 }
 
 hr.eachDiary {
@@ -168,7 +337,7 @@ hr.eachDiary {
     border-bottom: 1px dashed #fff;
 }
 
-img {
+img.eachDiaryImg {
     position: relative;
     width: 60%;
     margin: 20px;

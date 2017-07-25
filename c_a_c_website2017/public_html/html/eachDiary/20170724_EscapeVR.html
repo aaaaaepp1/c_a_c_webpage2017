@@ -45,9 +45,10 @@ and open the template in the editor.
         </div>
         
         
-        <div class="eachDiaryBackgroundImage--back" style="background-image: url('../../img/eachDiary/20170724_EscapeVR/main.png');">
-            <div class="eachDiaryBackgroundImage--main"></div>
-        </div>
+        <!-- ダイアリーのトップ画像 -->
+        <div class="eachDiaryBackgroundImage--back" style="background-image: url('../../img/eachDiary/20170724_EscapeVR/main.png');"></div>
+        
+        <!-- ダイアリーの説明 -->
         <div class="subPageHeader" style="background-color: rgba(255, 255, 255, 0.0);">
             <div class="subPageTitle" style="color: white; text-shadow: 1px 2px 3px rgba(10, 10, 10, 0.8)">
                 ダイアリー
@@ -58,109 +59,140 @@ and open the template in the editor.
         </div>
         
         <div class="eachDiaryContents--back">
+            
+            <!-- ダイアリーメニュー -->
+            <div class="diaryContents__menuBar--base">
+                <div class="diaryContents__menuBar--frame">
+                    <a href="" class="diaryContents__menuBar--cell">
+                        トップ
+                    </a>
+                    <a href="" class="diaryContents__menuBar--cell">
+                        行事
+                    </a>
+                    <a href="" class="diaryContents__menuBar--cell">
+                        活動日誌
+                    </a>
+                    <a href="" class="diaryContents__menuBar--cell">
+                        プロジェクト
+                    </a>
+                    <a href="" class="diaryContents__menuBar--cell">
+                        部員向け情報
+                    </a>
+                </div>
+            </div>
+            
             <div class="eachDiaryContents--frame">
                 
-                <!--  ここからダイアリー  -->
+                <!--  ここからダイアリータイトル  -->
                 <a class="eachDiaryContents--month">8</a>
                 <a class="eachDiaryContents--dateAndYear">/10/2017</a>
-                <h1>EscapeVR班の活動報告！</h1>
+                <h1 class="eachDiary">EscapeVR班の活動報告！</h1>
                 <hr class="eachDiary" />
+                <!--  ここまでダイアリータイトル  -->
                 
-                <h2>はじめに</h2>
-                <p>
-                    　こんにちは、escapeVR班です！暑い日が続きますがみなさんいかがお過ごしでしょうか。さて、このC.A.C web siteでは定期的にプロジェクトの紹介をしていくということで、その一番手として僕たちが立ち上げたプロジェクトであるescapeVR班の紹介をしていきたいと思います！
-                </p>
+                <div class="eachDiaryContents--sentence">
+
+                    <!--  ここからダイアリー  -->
+                    <h2 class="eachDiary">はじめに</h2>
+                    <p class="eachDiary">
+                          こんにちは、escapeVR班です！暑い日が続きますがみなさんいかがお過ごしでしょうか。さて、このC.A.C web siteでは定期的にプロジェクトの紹介をしていくということで、その一番手として僕たちが立ち上げたプロジェクトであるescapeVR班の紹介をしていきたいと思います！
+                    </p>
+
+                    <h2 class="eachDiary">プロジェクトの概要（担当 ：にしお）</h2>
+                    <p class="eachDiary">
+                          簡単に説明すると、、、このプロジェクトは脱出ゲームが作りたいというにしお君の提案が、VRで作ったら面白くね？というOkamoto君のアイデアによって、ただの脱出ゲームではない、VR脱出ゲームへと変貌を遂げたーというプロジェクトとなっております。<br>
+                          プロジェクトのメンバーは、にしお、Okamoto、森長、宮崎先輩の4人で、週一で集まって会議をしたりなど、日々活動しています！
+                    </p>
+
+                    <h2 class="eachDiary">EscapeVRについて（担当：Okamoto）</h2>
+                    <p class="eachDiary">
+                          今僕たちが作っているEscapeVRは、今までブラウザ中心で発展してきた「脱出ゲーム」をより没入感、現実味のあるバーチャルリアリティでプレイできるゲームです！<br>
+                          ゲーム自体の開発はゲームエンジンであるUnityを使用し、ゲームで使用するモデルはBlenderなど様々なソフトを使っています。今は作らないといけないモデルが半分くらい、ソースコードは2割くらいの完成度です。<br>
+                          部活でのプロジェクトの目標は、学祭で展示するゲームなどを作ることですが、このプロジェクトはISCAの提出を目標に開発をしています！コンテストの締め切りが8月いっぱいなので、みんな必死になって開発を進めています。
+                    </p>
+                    <img class="eachDiaryImg" alt="" src="../../img/eachDiary/20170724_EscapeVR/s_s_head.png" />
+
+                    <h2 class="eachDiary">作業について（担当：森長）</h2>
+                    <img class="eachDiaryImg" alt="" src="../../img/eachDiary/20170724_EscapeVR/meeting.jpg" />
+                    <p class="eachDiary">
+                          EscapeVR班では週に１回メンバー全員でミーティングをして、それぞれの進捗確認や、今後の方針などを話し合っています。脱出ゲーム大好きなにしおくんと私を中心に、脱出の仕組みもみんなで話し合って考えましたϵ( ‘Θ’ )϶<br>
+                        ゲームに登場するモデル・サウンド・プログラムも全部自分達で作っています！<br>
+                        メンバーの作業の様子や作品を紹介していきます^o^
+                    </p>
+                    <h3 class="eachDiary">にしおくん</h3>
+                    <img class="eachDiaryImg" alt="" src="../../img/eachDiary/20170724_EscapeVR/s_blender.jpg" />
+                    <p class="eachDiary">
+                        にしおくんの椅子のモデリングの作業の様子です！<br>
+                        モデリングはblenderを使って行っています。<br>
+                        初めてのモデリングらしいですが、他にもたくさんモデルを作ってくれていますp(^_^)q
+                    </p>
+
+                    <h3 class="eachDiary">Okamotoくん</h3>
+                    <img class="eachDiaryImg" alt="" src="../../img/eachDiary/20170724_EscapeVR/s_s_room.png" />
+                    <p class="eachDiary">
+                        岡本くんが作ってくれたステージとなる部屋です。<br>
+                        今回の脱出は、バーが舞台となっています！<br>
+                        岡本くんはすごい速さですごいクオリティのモデリングをします♪───Ｏ（≧∇≦）Ｏ────♪<br>
+                        CINEMA 4Dを使ってモデリングをしているそうです。
+                    </p>
+
+                    <h3 class="eachDiary">私</h3>
+                    <img class="eachDiaryImg" alt="" src="../../img/eachDiary/20170724_EscapeVR/ball.jpg" />
+                    <p class="eachDiary">
+                        私が作ったビリヤードボールです。テクスチャ作りました(´･_･`)<br>
+                        画像編集は好きなので、ワインのラベルなども私が作る予定です！
+                    </p>
+
+                    <h3 class="eachDiary">宮崎先輩</h3>
+                    <img class="eachDiaryImg" alt="" src="../../img/eachDiary/20170724_EscapeVR/code.png" />
+                    <p class="eachDiary">
+                        unityではC#を使ってコードを書いています！<br>
+                        宮崎先輩も忙しい中、なんか難しそうなことをしてくれています（ ; ; ）<br>
+                        私は初めて本格的なunityでの開発をするので、勉強しながら頑張っています・・・。
+                    </p>
+
+                    <h3 class="eachDiary">プロモーション映像</h3>
+                    <img class="eachDiaryImg" alt="" src="../../img/eachDiary/20170724_EscapeVR/studio.jpg" />
+                    <img class="eachDiaryImg" alt="" src="../../img/eachDiary/20170724_EscapeVR/s_storyboard.jpg" />
+                    <p class="eachDiary">
+                        プロモーション映像の撮影もしています（＾ν＾）<br>
+                        動画編集は岡本くんの担当です！とてもかっこいい映像ができそうなのでお楽しみに！！
+                    </p>
+
+                    <h3 class="eachDiary">実機テスト</h3>
+                    <img class="eachDiaryImg" alt="" src="../../img/eachDiary/20170724_EscapeVR/s_HMD.jpg" />
+                    <p class="eachDiary">
+                        oculus rift dk2 を使って実機テストをしています！<br>
+                        自分の作ったモデルがVRで見れると達成感があります！！！！！！<br>
+                        <br>
+                        他にもサウンド制作やシステム設計、GUIデザインなど、様々な作業をメンバーで分担しています！
+                    </p>
+
+
+                    <h2 class="eachDiary">EscapeVRのこれから（担当：Okamoto）</h2>
+                    <p class="eachDiary">
+                          今後は、計画通りだと残りのモデルと、プログラムは先にユーザインターフェースまわりのシステムから開発していく予定です。ISCAで提出するプレゼン用の映像も仕上げないと・・・。頑張ります。でも、8月いっぱいで動くものができるので、夏合宿ではすごい進捗が言えそう。みんなをびびらせてやるぜ(‘-‘*)ﾌﾌ
+                    </p>
+
+                    <!--  ここまでダイアリー  -->
+
+                    <hr style="margin-top: 45px;" class="eachDiary">
+                    <a href="" class="eachDiaryContents--prevPost">
+                        ←　はっぴーハロウィーン
+                    </a>
+                    <a href="" class="eachDiaryContents--nextPost">
+                        ノベゲー班、進捗報告！　→
+                    </a>
+                </div>
                 
-                <h2>プロジェクトの概要（担当 ：にしお）</h2>
-                <p>
-                    　簡単に説明すると、、、このプロジェクトは脱出ゲームが作りたいというにしお君の提案が、VRで作ったら面白くね？というOkamoto君のアイデアによって、ただの脱出ゲームではない、VR脱出ゲームへと変貌を遂げたーというプロジェクトとなっております。<br>
-                    　プロジェクトのメンバーは、にしお、Okamoto、森長、宮崎先輩の4人で、週一で集まって会議をしたりなど、日々活動しています！
-                </p>
-                
-                <h2>EscapeVRについて（担当：Okamoto）</h2>
-                <p>
-                    　今僕たちが作っているEscapeVRは、今までブラウザ中心で発展してきた「脱出ゲーム」をより没入感、現実味のあるバーチャルリアリティでプレイできるゲームです！<br>
-                    　ゲーム自体の開発はゲームエンジンであるUnityを使用し、ゲームで使用するモデルはBlenderなど様々なソフトを使っています。今は作らないといけないモデルが半分くらい、ソースコードは2割くらいの完成度です。<br>
-                    　部活でのプロジェクトの目標は、学祭で展示するゲームなどを作ることですが、このプロジェクトはISCAの提出を目標に開発をしています！コンテストの締め切りが8月いっぱいなので、みんな必死になって開発を進めています。
-                </p>
-                <img src="../../img/eachDiary/20170724_EscapeVR/s_s_head.png" />
-                
-                <h2>作業について（担当：森長）</h2>
-                <img src="../../img/eachDiary/20170724_EscapeVR/meeting.jpg" />
-                <p>
-                    　EscapeVR班では週に１回メンバー全員でミーティングをして、それぞれの進捗確認や、今後の方針などを話し合っています。脱出ゲーム大好きなにしおくんと私を中心に、脱出の仕組みもみんなで話し合って考えましたϵ( ‘Θ’ )϶<br>
-                    ゲームに登場するモデル・サウンド・プログラムも全部自分達で作っています！<br>
-                    メンバーの作業の様子や作品を紹介していきます^o^
-                </p>
-                <h3>にしおくん</h3>
-                <img src="../../img/eachDiary/20170724_EscapeVR/s_blender.jpg" />
-                <p>
-                    にしおくんの椅子のモデリングの作業の様子です！<br>
-                    モデリングはblenderを使って行っています。<br>
-                    初めてのモデリングらしいですが、他にもたくさんモデルを作ってくれていますp(^_^)q
-                </p>
-                
-                <h3>Okamotoくん</h3>
-                <img src="../../img/eachDiary/20170724_EscapeVR/s_s_room.png" />
-                <p>
-                    岡本くんが作ってくれたステージとなる部屋です。<br>
-                    今回の脱出は、バーが舞台となっています！<br>
-                    岡本くんはすごい速さですごいクオリティのモデリングをします♪───Ｏ（≧∇≦）Ｏ────♪<br>
-                    CINEMA 4Dを使ってモデリングをしているそうです。
-                </p>
-                
-                <h3>私</h3>
-                <img src="../../img/eachDiary/20170724_EscapeVR/ball.jpg" />
-                <p>
-                    私が作ったビリヤードボールです。テクスチャ作りました(´･_･`)<br>
-                    画像編集は好きなので、ワインのラベルなども私が作る予定です！
-                </p>
-                
-                <h3>宮崎先輩</h3>
-                <img src="../../img/eachDiary/20170724_EscapeVR/code.png" />
-                <p>
-                    unityではC#を使ってコードを書いています！<br>
-                    宮崎先輩も忙しい中、なんか難しそうなことをしてくれています（ ; ; ）<br>
-                    私は初めて本格的なunityでの開発をするので、勉強しながら頑張っています・・・。
-                </p>
-                
-                <h3>プロモーション映像</h3>
-                <img src="../../img/eachDiary/20170724_EscapeVR/studio.jpg" />
-                <img src="../../img/eachDiary/20170724_EscapeVR/s_storyboard.jpg" />
-                <p>
-                    プロモーション映像の撮影もしています（＾ν＾）<br>
-                    動画編集は岡本くんの担当です！とてもかっこいい映像ができそうなのでお楽しみに！！
-                </p>
-                
-                <h3>実機テスト</h3>
-                <img src="../../img/eachDiary/20170724_EscapeVR/s_HMD.jpg" />
-                <p>
-                    oculus rift dk2 を使って実機テストをしています！<br>
-                    自分の作ったモデルがVRで見れると達成感があります！！！！！！<br>
-                    <br>
-                    他にもサウンド制作やシステム設計、GUIデザインなど、様々な作業をメンバーで分担しています！
-                </p>
-                
-                
-                <h2>EscapeVRのこれから（担当：Okamoto）</h2>
-                <p>
-                    　今後は、計画通りだと残りのモデルと、プログラムは先にユーザインターフェースまわりのシステムから開発していく予定です。ISCAで提出するプレゼン用の映像も仕上げないと・・・。頑張ります。でも、8月いっぱいで動くものができるので、夏合宿ではすごい進捗が言えそう。みんなをびびらせてやるぜ(‘-‘*)ﾌﾌ
-                </p>
-                
-                <!--  ここまでダイアリー  -->
-                
-                <hr style="margin-top: 45px;" class="eachDiary">
-                <a href="" class="eachDiaryContents--prevPost">
-                    ←　はっぴーハロウィーン
-                </a>
-                <a href="" class="eachDiaryContents--nextPost">
-                    ノベゲー班、進捗報告！　→
-                </a>
+                <div class="eachDiaryContents--subMenu">
+                    sub menu here
+                </div>
             </div>
         </div>
         
         
-        <div class="futter" style="position: relative; left: -4px; width: calc(100% + 16px); top: 230px;">
+        <div class="futter" style="position: relative; left: -8px; width: calc(100% + 17px);">
             futter
         </div>
     </body>
