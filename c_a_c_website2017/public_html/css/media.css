@@ -34,7 +34,8 @@ and open the template in the editor.
     width: 1000px;
     height: calc(245px * 5);
     left: calc(50% - 500px);
-    top: 45px; //305px
+    top: 45px; 
+    /*305px*/
 /*    border-style: solid;
     border-width: 1px;
     border-color: rgb(55, 55, 55);*/

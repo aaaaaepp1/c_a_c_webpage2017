@@ -18,7 +18,7 @@ html {
     top: 25px;
     width: 50px;
     height: 50px;
-    //background-color: #545454;
+    /*background-color: #545454;*/
     background-image: url('img/menuButtonHamburger.png');
     z-index: 1000;
     transition: all 300ms 0s ease;
@@ -67,7 +67,7 @@ html {
     height: 150px;
     border-radius: 10px;
     transition: all 100ms 0s ease;
-    //background-color: red;
+    /*background-color: red;*/
 }
 .menu--cell:hover {
     background-color: rgba(40, 40, 40, 1.0);
@@ -80,7 +80,7 @@ html {
     height: 130px;
     border-radius: 5px;
     background-size: cover;
-    //background-color: blue;
+    /*background-color: blue;*/
 }
 .menu--cell__name {
     position: absolute;

@@ -45,10 +45,11 @@ and open the template in the editor.
 h2.diary {
     position: relative;
     margin-top: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-family: "Noto Sans Japanese";
     font-size: 20px;
-    width: 680px;
+    /*width: 680px;*/
+    width: 97%;
     font-weight: 700;
     color: #545454;
     background: linear-gradient(transparent 90%, #0096ff 70%);
@@ -229,9 +230,9 @@ h1.cellTitle:hover {
     width: 300px;
     left: 0px;
     top: 0px;
-    border-style: solid;
+/*    border-style: solid;
     border-width: 1px;
-    border-color: rgb(55, 55, 55);
+    border-color: rgb(55, 55, 55);*/
 }
 
 .eachDiaryContents--month {
@@ -344,3 +345,19 @@ img.eachDiaryImg {
     left: 20%;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
 }
+
+.subMenu__cell--frame {
+    position: relative;
+    display: inline-table;
+    width: 90%;
+    /*height: 400px;*/
+    margin-left: 10px;
+    margin-bottom: 15px;
+    background-color: white;
+    /*box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);*/
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+    z-index: 100;
+}
+
