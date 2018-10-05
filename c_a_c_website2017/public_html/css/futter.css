@@ -10,24 +10,21 @@
     width: 100%;
     height: 200px;
     background-color: #1a1c1f;
-    box-shadow:0px 19px 18px -10px #070707 inset;
+    box-shadow: 0px 19px 18px -10px #070707 inset;
     background-image: url(../img/all/footerBackImg.png);
     background-repeat: no-repeat;
     background-position-x: right;
     text-align: center;
-    
     z-index: 500;
 }
 
 .futter__contents {
     position: relative;
     /*border: white solid 1px;*/
-    width: 1000px;
+    width: 100%;
     height: 130px;
-    left: calc(50% - 500px);
     top: 70px;
     text-align: center;
-    
     z-index: 501;
 }
 
@@ -38,6 +35,7 @@
     font-size: 18px;
     margin-left: 50px;
 }
+
 a.futter__contents--link:hover {
     color: #0096ff;
 }
@@ -49,13 +47,13 @@ a.futter__contents--link:hover {
     font-size: 15px;
     text-align: center;
     width: 100%;
-    
     top: 60px;
 }
 
 .futter__copyright--link {
     color: #eeeeee;
 }
+
 .futter__copyright--link:hover {
     color: #0096ff;
 }
