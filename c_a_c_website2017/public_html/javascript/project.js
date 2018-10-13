@@ -7,9 +7,9 @@
 
 //function which control image when mouse hover
 function hoverProjectContents(hoverIn, comp) {
-    var imgNode = comp.children[0];
-    var imgBluredNode = comp.children[1];
-    var readMoreNode = comp.children[2];
+    var imgBluredNode = comp.children[0];
+    var imgNode = imgBluredNode.children[1];
+    var readMoreNode = imgBluredNode.children[0];
     
     $(imgNode).stop();
     $(imgBluredNode).stop();
