@@ -3,7 +3,7 @@
     Author     : okamoto
 */
 
-.futter {
+.footer {
     position: relative;
     top: 0px;
     left: 0px;
@@ -18,7 +18,7 @@
     z-index: 500;
 }
 
-.futter__contents {
+.footer__contents {
     position: relative;
     /*border: white solid 1px;*/
     width: 100%;
@@ -28,7 +28,7 @@
     z-index: 501;
 }
 
-.futter__contents--link {
+.footer__contents--link {
     position: relative;
     font-family: "Rounded Mplus 1c";
     color: #eeeeee;
@@ -36,11 +36,11 @@
     margin-left: 50px;
 }
 
-a.futter__contents--link:hover {
+a.footer__contents--link:hover {
     color: #0096ff;
 }
 
-.futter__copyright {
+.footer__copyright {
     position: relative;
     font-family: "Rounded Mplus 1c";
     color: #eeeeee;
@@ -50,10 +50,10 @@ a.futter__contents--link:hover {
     top: 60px;
 }
 
-.futter__copyright--link {
+.footer__copyright--link {
     color: #eeeeee;
 }
 
-.futter__copyright--link:hover {
+.footer__copyright--link:hover {
     color: #0096ff;
 }
