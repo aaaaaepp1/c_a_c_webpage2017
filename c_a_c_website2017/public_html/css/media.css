@@ -16,21 +16,21 @@
 }
 
 .mediaContents__background {
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: calc(245px * 5);
+    /*height: calc(245px * 5);*/
     left: 0px;
-    top: 230px;
+    top: 0px;
     background-color: rgba(255, 255, 255, 1.0);
 }
 
 .mediaContents__cell--frame {
-    position: absolute;
+    position: relative;
     width: 1000px;
-    height: calc(245px * 5);
+    /*height: calc(245px * 5);*/
     left: calc(50% - 500px);
-    top: 45px; 
-    /*305px*/
+    top: 45px;
+    padding-bottom: 50px;
 /*    border-style: solid;
     border-width: 1px;
     border-color: rgb(55, 55, 55);*/
@@ -120,4 +120,78 @@
 .mediaContents__cell--link:hover {
     background-color: #0096ff;
     color: white;
+}
+
+.mediaContents__pageMenu--frame {
+    position: relative;
+    /*top: 1380px;*/
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.mediaContents__pageMenu--back {
+    display: inline-block;
+    top: 0px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.mediaContents__pageMenu--cellSquare {
+    display: table-cell;
+    position: relative;
+    background-color: rgba(0, 160, 233, 1.0);
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    font-family: "Rounded Mplus 1c";
+    text-align: center;
+    vertical-align: middle;
+    color: #2d2d2d;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+
+.mediaContents__pageMenu--cellSquare:hover {
+    background-color: rgba(0, 160, 233, 0.7);
+}
+
+.mediaContents__pageMenu--cellRec {
+    display: table-cell;
+    position: relative;
+    background-color: rgba(0, 160, 233, 1.0);
+    width: 70px;
+    height: 50px;
+    margin-left: 10px;
+    font-family: "Rounded Mplus 1c";
+    text-align: center;
+    vertical-align: middle;
+    color: #2d2d2d;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+.mediaContents__pageMenu--cellRec:hover {
+    background-color: rgba(0, 160, 233, 0.7);
+}
+
+.mediaContents__pageMenu--cellRecNotButton {
+    display: table-cell;
+    position: relative;
+    background-color: rgba(180, 180, 180, 1.0);
+    width: 70px;
+    height: 50px;
+    margin-left: 10px;
+    font-family: "Rounded Mplus 1c";
+    text-align: center;
+    vertical-align: middle;
+    color: #2d2d2d;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
 }
