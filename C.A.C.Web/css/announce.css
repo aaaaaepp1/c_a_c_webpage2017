@@ -15,7 +15,34 @@ and open the template in the editor.
     height: 100%;
     top: 50px;
     left: 0px;
+<<<<<<< HEAD
+    background-image: url('../img/announce/backgroundImg.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+.announce__background {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding-bottom: calc(100% - 590px);
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.announce__noCongtentsMessage--frame {
+    position: relative;
+    top: 100px;
+    left: 0px;
+    font-family: "Rounded Mplus 1c";
+    color: #8c8b8b;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+=======
     background-image: url('../images/announce/backgroundImg.png');
     background-size: cover;
     background-position: center center;
+>>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
 }

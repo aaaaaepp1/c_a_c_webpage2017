@@ -11,7 +11,11 @@
     height: 200px;
     background-color: #1a1c1f;
     box-shadow: 0px 19px 18px -10px #070707 inset;
+<<<<<<< HEAD
+    background-image: url(../img/all/footerBackImg.png);
+=======
     background-image: url(../images/all/footerBackImg.png);
+>>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
     background-repeat: no-repeat;
     background-position-x: right;
     text-align: center;

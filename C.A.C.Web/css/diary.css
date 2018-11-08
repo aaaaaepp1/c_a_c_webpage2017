@@ -15,7 +15,11 @@ and open the template in the editor.
     height: 100%;
     top: 50px;
     left: 0px;
+<<<<<<< HEAD
+    background-image: url('../img/diary/backgroundImg.png');
+=======
     background-image: url('../images/diary/backgroundImg.png');
+>>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
     background-size: cover;
     background-position: center center;
 }
@@ -24,9 +28,15 @@ and open the template in the editor.
     position: relative;
     display: inline-table;
     width: 325px;
+<<<<<<< HEAD
+    height: 450px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+=======
     height: 400px;
     margin-left: 10px;
     margin-bottom: 15px;
+>>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
     background-color: white;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
 /*    border-style: solid;
@@ -36,10 +46,16 @@ and open the template in the editor.
 }
 
 .diaryContents__cell--img {
+<<<<<<< HEAD
+    position: relative;
+    display: inline-block;
+    width: 100%;
+=======
     position: absolute;
     display: inline-block;
     width: 100%;
     
+>>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
 }
 
 h2.diary {
@@ -57,17 +73,29 @@ h2.diary {
 
 p.diary {
     display: inline-block;
+<<<<<<< HEAD
+    text-align: justify;
+    font-family: "Noto Sans Japanese";
+    font-size: 13px;
+    color: #494949;
+    margin: 10px;
+=======
     font-family: "Noto Sans Japanese";
     font-size: 13px;
     color: #494949;
     margin-left: 10px;
+>>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
 }
 
 .diaryContents__cell--categoryFrame {
     position: absolute;
     width: 320px;
     height: 20px;
+<<<<<<< HEAD
+    top: 215px;
+=======
     top: 220px;
+>>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
     padding: 0px 10px;
 }
 
@@ -75,8 +103,34 @@ p.diary {
     position: relative;
     display: inline-table;
     
+<<<<<<< HEAD
+    /*height: 20px;*/
+    top: 0px;
+    font-family: "Noto Sans Japanese";
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+    padding: 0px 10px;
+    background-color: #eca41f;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;	
+    -moz-border-radius: 3px;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+}
+
+.diaryContents__cell_categoryCellTitle {
+    position: relative;
+    display: inline-table;
+    
+    /*height: 20px;*/
+    top: 0px;
+    margin-left: 20px;
+=======
     height: 20px;
     top: 0px;
+>>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
     font-family: "Noto Sans Japanese";
     font-size: 13px;
     font-weight: 500;
@@ -93,8 +147,12 @@ p.diary {
 
 h1.cellTitle {
     position: relative;
+<<<<<<< HEAD
+    top: 0px;
+=======
     margin-top: 250px;
     margin-bottom: -2px;
+>>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
     padding: 0px 10px;
     font-family: "Noto Sans Japanese";
     font-size: 20px;
@@ -168,8 +226,11 @@ h1.cellTitle:hover {
 
 
 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
 /*each diary*/
 .eachDiaryBackgroundImage--main {
     position: absolute;
@@ -199,7 +260,11 @@ h1.cellTitle:hover {
     position: relative;
     background-color: white;
     width: calc(100% + 17px);
+<<<<<<< HEAD
+    margin-top: 0px;
+=======
     margin-top: 230px;
+>>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
     left: -8px;
 }
 
@@ -298,7 +363,11 @@ h2.eachDiary {
     font-weight: 500;
     color: #494949;
     margin-top: 30px;
+<<<<<<< HEAD
+    margin-bottom: 5px;
+=======
     margin-bottom: -10px;
+>>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
     background: transparent;
     border-left: solid 10px #0096ff;
 }
@@ -346,9 +415,17 @@ img.eachDiaryImg {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
 }
 
+<<<<<<< HEAD
+/* sub menu */
 .subMenu__cell--frame {
     position: relative;
     display: inline-table;
+    text-align: justify;
+=======
+.subMenu__cell--frame {
+    position: relative;
+    display: inline-table;
+>>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
     width: 90%;
     /*height: 400px;*/
     margin-left: 10px;
@@ -361,3 +438,143 @@ img.eachDiaryImg {
     z-index: 100;
 }
 
+<<<<<<< HEAD
+.subMenu__cell--contentsFrame {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+}
+
+.subMenu__cell--img {
+    position: relative;
+    display: inline-block;
+    width: 40%;
+}
+
+.subMenu__cell--titleFrame {
+    position: absolute;
+    width: 59%;
+    top: 0px;
+    left: 40%;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+}
+
+.subMenu__cell--categoryCell {
+    position: absolute;
+    bottom: 10px;
+    left: calc(40% + 10px);
+}
+
+h3.subMenu__cell--title {
+    position: relative;
+    text-align: justify;
+    /*margin-top: -30px;*/
+    padding: 0px 10px;
+    font-family: "Noto Sans Japanese";
+    font-size: 15px;
+    font-weight: 700;
+    color: #545454;
+}
+h3.subMenu__cell--title:hover {
+    color: #0096ff;
+}
+
+a.subMenu__cell--tag {
+    position: relative;
+    display: inline-block;
+    top: 0px;
+    left: 0px;
+    margin-right: 10px;
+    /*background-color: #eca41f;*/
+    font-family: "Noto Sans Japanese";
+    font-size: 13px;
+    font-weight: 700;
+    color: #494949;
+}
+a.subMenu__cell--tag:hover {
+    color: #0096ff;
+}
+
+
+
+.projectContents__pageMenu--frame {
+    position: relative;
+    /*top: 1380px;*/
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.projectContents__pageMenu--back {
+    display: inline-block;
+    top: 0px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.projectContents__pageMenu--cellSquare {
+    display: table-cell;
+    position: relative;
+    background-color: rgba(0, 160, 233, 1.0);
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    font-family: "Rounded Mplus 1c";
+    text-align: center;
+    vertical-align: middle;
+    color: #2d2d2d;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+
+.projectContents__pageMenu--cellSquare:hover {
+    background-color: rgba(0, 160, 233, 0.7);
+}
+
+.projectContents__pageMenu--cellRec {
+    display: table-cell;
+    position: relative;
+    background-color: rgba(0, 160, 233, 1.0);
+    width: 70px;
+    height: 50px;
+    margin-left: 10px;
+    font-family: "Rounded Mplus 1c";
+    text-align: center;
+    vertical-align: middle;
+    color: #2d2d2d;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+.projectContents__pageMenu--cellRec:hover {
+    background-color: rgba(0, 160, 233, 0.7);
+}
+
+.projectContents__pageMenu--cellRecNotButton {
+    display: table-cell;
+    position: relative;
+    background-color: rgba(180, 180, 180, 1.0);
+    width: 70px;
+    height: 50px;
+    margin-left: 10px;
+    font-family: "Rounded Mplus 1c";
+    text-align: center;
+    vertical-align: middle;
+    color: #2d2d2d;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+
+=======
+>>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
