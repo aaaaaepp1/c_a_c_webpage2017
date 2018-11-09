@@ -1,0 +1,520 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017/05/28, 22:23:27
+    Author     : okamoto
+*/
+
+
+.diaryBackgroundImage {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 50px;
+    left: 0px;
+    background-image: url('../img/diary/backgroundImg.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+.diaryContents__cell--frame {
+    position: relative;
+    display: inline-table;
+    width: 325px;
+    height: 450px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+    z-index: 100;
+}
+
+.diaryContents__cell--img {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+h2.diary {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: "Noto Sans Japanese";
+    font-size: 20px;
+    /*width: 680px;*/
+    width: 97%;
+    font-weight: 700;
+    color: #545454;
+    background: linear-gradient(transparent 90%, #0096ff 70%);
+}
+
+p.diary {
+    display: inline-block;
+    text-align: justify;
+    font-family: "Noto Sans Japanese";
+    font-size: 13px;
+    color: #494949;
+    margin: 10px;
+}
+
+.diaryContents__cell--categoryFrame {
+    position: absolute;
+    width: 320px;
+    height: 20px;
+    top: 215px;
+    padding: 0px 10px;
+}
+
+.diaryContents__cell_categoryCell {
+    position: relative;
+    display: inline-table;
+    
+    /*height: 20px;*/
+    top: 0px;
+    font-family: "Noto Sans Japanese";
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+    padding: 0px 10px;
+    background-color: #eca41f;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;	
+    -moz-border-radius: 3px;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+}
+
+.diaryContents__cell_categoryCellTitle {
+    position: relative;
+    display: inline-table;
+    
+    /*height: 20px;*/
+    top: 0px;
+    margin-left: 20px;
+    font-family: "Noto Sans Japanese";
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+    padding: 0px 10px;
+    background-color: #eca41f;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;	
+    -moz-border-radius: 3px;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+}
+
+h1.cellTitle {
+    position: relative;
+    top: 0px;
+    padding: 0px 10px;
+    font-family: "Noto Sans Japanese";
+    font-size: 20px;
+    font-weight: 700;
+    color: #545454;
+}
+h1.cellTitle:hover {
+    color: #0096ff;
+}
+
+.diaryContents__cell--tag {
+    position: relative;
+    display: inline-block;
+    top: 0px;
+    left: 10px;
+    margin-right: 10px;
+    /*background-color: #eca41f;*/
+    font-family: "Noto Sans Japanese";
+    font-size: 12px;
+    font-weight: 700;
+    color: #8c8b8b;
+}
+.diaryContents__cell--tag:hover {
+    color: #0096ff;
+}
+
+.diaryContents__menuBar--base {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    top: 0px;
+    left: 0px;
+    margin-bottom: 45px;
+    background-color: #545454;
+    
+}
+
+.diaryContents__menuBar--frame {
+    position: absolute;
+    display: inline-block;
+    width: 1000px;
+    height: 50px;
+    top: 0px;
+    left: calc(50% - 500px);
+    text-align: left;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+}
+
+.diaryContents__menuBar--cell {
+    position: relative;
+    display: inline-table;
+    height: 40px;
+    background-color: #545454;
+    padding: 0px 20px;
+    margin: 0px -3px;
+    line-height: 43px;
+    font-family: "Noto Sans Japanese";
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+}
+.diaryContents__menuBar--cell:hover {
+    background-color: #0096ff;
+}
+
+
+
+/*each diary*/
+.eachDiaryBackgroundImage--main {
+    position: absolute;
+    background-size: cover;
+    width: 495px;
+    height: 380px;
+    top: 50px;
+}
+
+.eachDiaryBackgroundImage--back {
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    width: calc(100% + 20px);
+    height: 200px;
+    top: 40px;
+    left: -10px;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+    z-index: 0;
+}
+
+.eachDiaryContents--back {
+    position: relative;
+    background-color: white;
+    width: calc(100% + 17px);
+    margin-top: 0px;
+    left: -8px;
+}
+
+.eachDiaryContents--frame {
+    position: relative;
+    width: 1000px;
+    left: calc(50% - 500px);
+    top: 0px;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+}
+
+.eachDiaryContents--sentence {
+    display: table-cell;
+    position: relative;
+    width: 700px;
+    left: 0px;
+    top: 0px;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+}
+
+.eachDiaryContents--subMenu {
+    display: table-cell;
+    position: relative;
+    width: 300px;
+    left: 0px;
+    top: 0px;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+}
+
+.eachDiaryContents--month {
+    position: relative;
+    display: inline-block;
+    margin-top: 0px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 40px;
+    color: #545454;
+}
+
+.eachDiaryContents--dateAndYear {
+    position: relative;
+    left: -8px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 17px;
+    color: #545454;
+}
+
+.eachDiaryContents--prevPost {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    font-family: "Noto Sans Japanese";
+    font-size: 16px;
+    font-weight: 300;
+    color: #0096ff;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+}
+.eachDiaryContents--nextPost {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    text-align: right;
+    font-family: "Noto Sans Japanese";
+    font-size: 16px;
+    font-weight: 300;
+    color: #0096ff;
+    margin-bottom: 45px;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+}
+
+h1.eachDiary {
+    display: inline;
+    position: relative;
+    left: 20px;
+    font-family: "Noto Sans Japanese";
+    font-weight: 500;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    color: #545454;
+    font-size: 35px;
+}
+
+h2.eachDiary {
+    padding: 0.25em 0.5em;
+    font-family: "Noto Sans Japanese";
+    font-size: 20px;
+    font-weight: 500;
+    color: #494949;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    background: transparent;
+    border-left: solid 10px #0096ff;
+}
+
+h3.eachDiary {
+    position: relative;
+    padding-left: 1.2em;/*アイコン分のスペース*/
+    line-height: 1.4;
+    font-family: "Noto Sans Japanese";
+    font-size: 18px;
+    font-weight: 600;
+    color: #494949;
+    margin-bottom: -10px;
+}
+h3.eachDiary:before{
+    font-family: FontAwesome;
+    content: "・";
+    position: absolute;
+    font-size: 1em;
+    left: 0;
+    top: 0;
+    color: #0096ff
+}
+
+p.eachDiary {
+    display: inline-block;
+    font-family: "Noto Sans Japanese";
+    font-size: 16px;
+    color: #494949;
+    margin-left: 20px;
+}
+
+hr.eachDiary {
+    position: relative;
+    top: -20px;
+    border-top: 1px dashed #8c8b8b;
+    border-bottom: 1px dashed #fff;
+}
+
+img.eachDiaryImg {
+    position: relative;
+    width: 60%;
+    margin: 20px;
+    left: 20%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* sub menu */
+.subMenu__cell--frame {
+    position: relative;
+    display: inline-table;
+    text-align: justify;
+    width: 90%;
+    /*height: 400px;*/
+    margin-left: 10px;
+    margin-bottom: 15px;
+    background-color: white;
+    /*box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);*/
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+    z-index: 100;
+}
+
+.subMenu__cell--contentsFrame {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+}
+
+.subMenu__cell--img {
+    position: relative;
+    display: inline-block;
+    width: 40%;
+}
+
+.subMenu__cell--titleFrame {
+    position: absolute;
+    width: 59%;
+    top: 0px;
+    left: 40%;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+}
+
+.subMenu__cell--categoryCell {
+    position: absolute;
+    bottom: 10px;
+    left: calc(40% + 10px);
+}
+
+h3.subMenu__cell--title {
+    position: relative;
+    text-align: justify;
+    /*margin-top: -30px;*/
+    padding: 0px 10px;
+    font-family: "Noto Sans Japanese";
+    font-size: 15px;
+    font-weight: 700;
+    color: #545454;
+}
+h3.subMenu__cell--title:hover {
+    color: #0096ff;
+}
+
+a.subMenu__cell--tag {
+    position: relative;
+    display: inline-block;
+    top: 0px;
+    left: 0px;
+    margin-right: 10px;
+    /*background-color: #eca41f;*/
+    font-family: "Noto Sans Japanese";
+    font-size: 13px;
+    font-weight: 700;
+    color: #494949;
+}
+a.subMenu__cell--tag:hover {
+    color: #0096ff;
+}
+
+
+
+.projectContents__pageMenu--frame {
+    position: relative;
+    /*top: 1380px;*/
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.projectContents__pageMenu--back {
+    display: inline-block;
+    top: 0px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.projectContents__pageMenu--cellSquare {
+    display: table-cell;
+    position: relative;
+    background-color: rgba(0, 160, 233, 1.0);
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    font-family: "Rounded Mplus 1c";
+    text-align: center;
+    vertical-align: middle;
+    color: #2d2d2d;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+
+.projectContents__pageMenu--cellSquare:hover {
+    background-color: rgba(0, 160, 233, 0.7);
+}
+
+.projectContents__pageMenu--cellRec {
+    display: table-cell;
+    position: relative;
+    background-color: rgba(0, 160, 233, 1.0);
+    width: 70px;
+    height: 50px;
+    margin-left: 10px;
+    font-family: "Rounded Mplus 1c";
+    text-align: center;
+    vertical-align: middle;
+    color: #2d2d2d;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+.projectContents__pageMenu--cellRec:hover {
+    background-color: rgba(0, 160, 233, 0.7);
+}
+
+.projectContents__pageMenu--cellRecNotButton {
+    display: table-cell;
+    position: relative;
+    background-color: rgba(180, 180, 180, 1.0);
+    width: 70px;
+    height: 50px;
+    margin-left: 10px;
+    font-family: "Rounded Mplus 1c";
+    text-align: center;
+    vertical-align: middle;
+    color: #2d2d2d;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+

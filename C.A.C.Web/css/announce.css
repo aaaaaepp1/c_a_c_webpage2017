@@ -1,0 +1,42 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017/05/28, 22:23:27
+    Author     : okamoto
+*/
+
+
+.announceBackgroundImage {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 50px;
+    left: 0px;
+    background-image: url('../img/announce/backgroundImg.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+.announce__background {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding-bottom: calc(100% - 590px);
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.announce__noCongtentsMessage--frame {
+    position: relative;
+    top: 100px;
+    left: 0px;
+    font-family: "Rounded Mplus 1c";
+    color: #8c8b8b;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+}
