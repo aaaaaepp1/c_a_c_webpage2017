@@ -6,10 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-<<<<<<< HEAD
-=======
-        <title>C.A.C. | 京都産業大学 文化団体連盟所属 電子計算機応用部</title>
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -35,7 +32,6 @@ and open the template in the editor.
         <div class="miniHeader">
             <div class="miniHeader__cacLogo" style="cursor: pointer;" onclick="location.href ="<?php echo esc_url( home_url( '/' ) ); ?>" ></div>
             <div style="text-align: right; margin-right: 30px >
-<<<<<<< HEAD
                 <?php wp_nav_menu( array(
                       'theme_location' => 'header-nav',
                       'menu' => '',
@@ -46,14 +42,6 @@ and open the template in the editor.
                       'container_id' => '',
                       'fallback_cb' => ''
                 ) ); ?>
-=======
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="miniHeader__Link">ホーム</a>
-                <a href="<?php echo esc_url( home_url( 'index.php/about/' ) ); ?>" class="miniHeader__Link">弊団体について</a>
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="miniHeader__Link">プロジェクト</a>
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="miniHeader__Link">告知</a>
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="miniHeader__Link">ダイアリー</a>
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="miniHeader__Link">メディア</a>
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
             </div>
         </div>
             

@@ -57,11 +57,7 @@ and open the template in the editor.
                 </div>
             </div>
 
-<<<<<<< HEAD
             <div class="mainMenu__projectLink" onclick="document.location.href = '<?php echo esc_url( home_url( 'index.php/category/project/' ) ); ?>'" onmouseout="hoverMainMenu('project', false);" onmouseover="hoverMainMenu('project', true);">
-=======
-            <div class="mainMenu__projectLink" onclick="document.location.href = 'html/project.html'" onmouseout="hoverMainMenu('project', false);" onmouseover="hoverMainMenu('project', true);">
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
                 <div class="mainMenu__imageRight" id="mainMenu__projectLink" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/top/mainMenu_project.png');"></div>
                 <div class="mainMenu__discriptionLeft" style="background-color: #69abdf;">
                     <div class="mainMenu__discriptionLogo" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/top/mainMenu_logo_プロジェクト.png');"></div>
@@ -72,11 +68,7 @@ and open the template in the editor.
                 </div>
             </div>
 
-<<<<<<< HEAD
             <div class="mainMenu__diaryLink" onclick="document.location.href = '<?php echo esc_url( home_url( 'index.php/category/diary/' ) ); ?>'" onmouseout="hoverMainMenu('diary', false);" onmouseover="hoverMainMenu('diary', true);">
-=======
-            <div class="mainMenu__diaryLink" onclick="document.location.href = 'html/diary.html'" onmouseout="hoverMainMenu('diary', false);" onmouseover="hoverMainMenu('diary', true);">
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
                 <div class="mainMenu__imageLeft" id="mainMenu__diaryLink" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/top/mainMenu_diary.png');">
                     <div class="mainMenu__squareLeft" style="background-color: #d069df;"></div>
                 </div>

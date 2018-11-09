@@ -6,10 +6,6 @@ and open the template in the editor.
 -->
 <html>
     <head>
-<<<<<<< HEAD
-=======
-        <title>C.A.C. | 京都産業大学 文化団体連盟所属 電子計算機応用部</title>
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -34,7 +30,6 @@ and open the template in the editor.
 
             <div class="footer">
                 <div class="footer__contents">
-<<<<<<< HEAD
                     <?php wp_nav_menu( array(
                           'theme_location' => 'footer-nav',
                           'menu' => 'ul',
@@ -45,14 +40,6 @@ and open the template in the editor.
                           'container_id' => '',
                           'fallback_cb' => ''
                     ) ); ?>
-=======
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer__contents--link">ホーム</a>
-                    <a href="<?php echo esc_url( home_url( 'index.php/about/' ) ); ?>" class="footer__contents--link">弊団体について</a>
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer__contents--link">プロジェクト</a>
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer__contents--link">告知</a>
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer__contents--link">ダイアリー</a>
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer__contents--link">メディア</a>
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
                     <div class="footer__copyright">
                         Copyright &copy; Computer Applications Club All Rights Reserved.
                     </div>

@@ -15,7 +15,6 @@ and open the template in the editor.
     height: 100%;
     top: 50px;
     left: 0px;
-<<<<<<< HEAD
     background-image: url('../img/announce/backgroundImg.png');
     background-size: cover;
     background-position: center center;
@@ -40,9 +39,4 @@ and open the template in the editor.
 /*    border-style: solid;
     border-width: 1px;
     border-color: rgb(55, 55, 55);*/
-=======
-    background-image: url('../images/announce/backgroundImg.png');
-    background-size: cover;
-    background-position: center center;
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
 }

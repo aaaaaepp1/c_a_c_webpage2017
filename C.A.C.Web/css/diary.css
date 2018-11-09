@@ -15,11 +15,7 @@ and open the template in the editor.
     height: 100%;
     top: 50px;
     left: 0px;
-<<<<<<< HEAD
     background-image: url('../img/diary/backgroundImg.png');
-=======
-    background-image: url('../images/diary/backgroundImg.png');
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
     background-size: cover;
     background-position: center center;
 }
@@ -28,15 +24,9 @@ and open the template in the editor.
     position: relative;
     display: inline-table;
     width: 325px;
-<<<<<<< HEAD
     height: 450px;
     margin-left: 10px;
     margin-bottom: 10px;
-=======
-    height: 400px;
-    margin-left: 10px;
-    margin-bottom: 15px;
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
     background-color: white;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
 /*    border-style: solid;
@@ -46,16 +36,9 @@ and open the template in the editor.
 }
 
 .diaryContents__cell--img {
-<<<<<<< HEAD
     position: relative;
     display: inline-block;
     width: 100%;
-=======
-    position: absolute;
-    display: inline-block;
-    width: 100%;
-    
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
 }
 
 h2.diary {
@@ -73,29 +56,18 @@ h2.diary {
 
 p.diary {
     display: inline-block;
-<<<<<<< HEAD
     text-align: justify;
     font-family: "Noto Sans Japanese";
     font-size: 13px;
     color: #494949;
     margin: 10px;
-=======
-    font-family: "Noto Sans Japanese";
-    font-size: 13px;
-    color: #494949;
-    margin-left: 10px;
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
 }
 
 .diaryContents__cell--categoryFrame {
     position: absolute;
     width: 320px;
     height: 20px;
-<<<<<<< HEAD
     top: 215px;
-=======
-    top: 220px;
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
     padding: 0px 10px;
 }
 
@@ -103,7 +75,6 @@ p.diary {
     position: relative;
     display: inline-table;
     
-<<<<<<< HEAD
     /*height: 20px;*/
     top: 0px;
     font-family: "Noto Sans Japanese";
@@ -127,10 +98,6 @@ p.diary {
     /*height: 20px;*/
     top: 0px;
     margin-left: 20px;
-=======
-    height: 20px;
-    top: 0px;
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
     font-family: "Noto Sans Japanese";
     font-size: 13px;
     font-weight: 500;
@@ -147,12 +114,7 @@ p.diary {
 
 h1.cellTitle {
     position: relative;
-<<<<<<< HEAD
     top: 0px;
-=======
-    margin-top: 250px;
-    margin-bottom: -2px;
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
     padding: 0px 10px;
     font-family: "Noto Sans Japanese";
     font-size: 20px;
@@ -226,11 +188,6 @@ h1.cellTitle:hover {
 
 
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
 /*each diary*/
 .eachDiaryBackgroundImage--main {
     position: absolute;
@@ -260,11 +217,7 @@ h1.cellTitle:hover {
     position: relative;
     background-color: white;
     width: calc(100% + 17px);
-<<<<<<< HEAD
     margin-top: 0px;
-=======
-    margin-top: 230px;
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
     left: -8px;
 }
 
@@ -363,11 +316,7 @@ h2.eachDiary {
     font-weight: 500;
     color: #494949;
     margin-top: 30px;
-<<<<<<< HEAD
     margin-bottom: 5px;
-=======
-    margin-bottom: -10px;
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
     background: transparent;
     border-left: solid 10px #0096ff;
 }
@@ -415,17 +364,11 @@ img.eachDiaryImg {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
 }
 
-<<<<<<< HEAD
 /* sub menu */
 .subMenu__cell--frame {
     position: relative;
     display: inline-table;
     text-align: justify;
-=======
-.subMenu__cell--frame {
-    position: relative;
-    display: inline-table;
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
     width: 90%;
     /*height: 400px;*/
     margin-left: 10px;
@@ -438,7 +381,6 @@ img.eachDiaryImg {
     z-index: 100;
 }
 
-<<<<<<< HEAD
 .subMenu__cell--contentsFrame {
     position: relative;
     display: inline-block;
@@ -576,5 +518,3 @@ a.subMenu__cell--tag:hover {
     border-color: white;
 }
 
-=======
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09

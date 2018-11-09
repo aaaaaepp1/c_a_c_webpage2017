@@ -10,48 +10,27 @@
     height: 100%;
     top: 50px;
     left: 0px;
-<<<<<<< HEAD
     background-image: url('../img/media/backgroundImg.png');
-=======
-    background-image: url('../images/media/backgroundImg.png');
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
     background-size: cover;
     background-position: center center;
 }
 
 .mediaContents__background {
-<<<<<<< HEAD
     position: relative;
     width: 100%;
     /*height: calc(245px * 5);*/
     left: 0px;
     top: 0px;
-=======
-    position: absolute;
-    width: 100%;
-    height: calc(245px * 5);
-    left: 0px;
-    top: 230px;
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
     background-color: rgba(255, 255, 255, 1.0);
 }
 
 .mediaContents__cell--frame {
-<<<<<<< HEAD
     position: relative;
     width: 1000px;
     /*height: calc(245px * 5);*/
     left: calc(50% - 500px);
     top: 45px;
     padding-bottom: 50px;
-=======
-    position: absolute;
-    width: 1000px;
-    height: calc(245px * 5);
-    left: calc(50% - 500px);
-    top: 45px; 
-    /*305px*/
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
 /*    border-style: solid;
     border-width: 1px;
     border-color: rgb(55, 55, 55);*/
@@ -141,7 +120,6 @@
 .mediaContents__cell--link:hover {
     background-color: #0096ff;
     color: white;
-<<<<<<< HEAD
 }
 
 .mediaContents__pageMenu--frame {
@@ -216,6 +194,4 @@
     border-style: solid;
     border-width: 2px;
     border-color: white;
-=======
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
 }

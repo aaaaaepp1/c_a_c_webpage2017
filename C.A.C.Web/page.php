@@ -137,7 +137,7 @@ and open the template in the editor.
                         <div class="aboutProfile__information--sentence">
                             毎週水曜日 13時15分～14時45分 最大20時まで<br>
                             毎週木曜日 16時45分～18時15分 最大20時まで<br>
-                            10号館2F 10205情報処理教室
+                            10号館2F 10204情報処理教室
                         </div>
                         <div class="aboutProfile__information--separator"></div>
                     </div>

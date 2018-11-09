@@ -1,6 +1,5 @@
 <?php
 
-<<<<<<< HEAD
 //テーマのセットアップ
 // titleタグをhead内に生成する
 add_theme_support( 'title-tag' );
@@ -13,9 +12,6 @@ add_theme_support( 'post-thumbnails' );
 
 //カスタムメニュー
 add_theme_support( 'menus' );
-=======
-//カスタムメニュー
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
 register_nav_menu( 'header-nav',  ' ヘッダーナビゲーション ' );
 register_nav_menu( 'footer-nav',  ' フッターナビゲーション ' );
 

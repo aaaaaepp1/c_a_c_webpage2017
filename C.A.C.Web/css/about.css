@@ -9,11 +9,7 @@
     height: 100%;
     top: 0px;
     left: 0px;
-<<<<<<< HEAD
     background-image: url('../img/about/backgroundImg.png');
-=======
-    background-image: url('../images/about/backgroundImg.png');
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
     background-size: cover;
     background-position: center center;
 }

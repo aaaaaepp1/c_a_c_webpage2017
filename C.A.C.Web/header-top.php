@@ -6,16 +6,9 @@ and open the template in the editor.
 -->
 <html>
     <head>
-<<<<<<< HEAD
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-=======
-        <title>C.A.C. | 京都産業大学 文化団体連盟所属 電子計算機応用部</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
         <!-- import fonts -->
         <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
@@ -44,7 +37,6 @@ and open the template in the editor.
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-<<<<<<< HEAD
                     <?php wp_nav_menu( array(
                           'theme_location' => 'header-nav',
                           'menu' => 'ul',
@@ -55,16 +47,6 @@ and open the template in the editor.
                           'container_id' => '',
                           'fallback_cb' => ''
                     ) ); ?>
-=======
-                    <ul id="menu" class="collapse navbar-collapse justify-content-center">
-                        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="header__Link">ホーム</a></li>
-                        <li><a href="<?php echo esc_url( home_url( 'index.php/about/' ) ); ?>" class="header__Link">弊団体について</a></li>
-                        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="header__Link">プロジェクト</a></li>
-                        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="header__Link">告知</a></li>
-                        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="header__Link">ダイアリー</a></li>
-                        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="header__Link">メディア</a></li>
-                    </ul>
->>>>>>> 09d663e930703fcd01502688f9d12b7092242a09
                 </nav>
             </div>
 
