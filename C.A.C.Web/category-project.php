@@ -45,6 +45,7 @@ and open the template in the editor.
         
         <div class="projectContents__background">
             <div class="projectContents__background--frame">
+                
                 <a href="" class="projectContents__cell--base" onmouseover="hoverProjectContents(true, this);" onmouseout="hoverProjectContents(false, this);">
                     <div class="projectContents__cell--imgBlur" style="background-image: url('../img/project/projectImage_20170721_MikuLive.png');">
                         <div class="projectContents__cell--readMoreButton">ReadMore</div>

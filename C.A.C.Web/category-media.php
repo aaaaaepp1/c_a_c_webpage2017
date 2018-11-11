@@ -46,41 +46,39 @@ and open the template in the editor.
         <div class="mediaContents__background">
             <div class="mediaContents__cell--frame">
                 
-                <div class="mediaContents__cell--base">
-                    <div class="mediaContents__cell--img" style="background-image: url('../img/media/mediaImage_2017_ISCA.png');"></div>
-                    <div class="mediaContents__cell--title">EscapeVRが InternationalStudentsCreativeAward2016 で入賞</div>
-                    <div class="mediaContents__cell--discription">弊団体のプロジェクトであるVR脱出ゲーム「EscapeVR」が、InternationalStudentsCreativeAward 2016で入賞を果たしました。</div>
-                    <div class="mediaContents__cell--linkBase">
-                        <a href="" class="mediaContents__cell--link">ISCA2016</a>
-                        <a href="" class="mediaContents__cell--link">ダイアリー</a>
-                    </div>
-                </div>
-
-                
-                <div class="mediaContents__cell--base">
-                    media
-                </div>
-
-                <div class="mediaContents__cell--base">
-                    media
-                </div>
-
-                <div class="mediaContents__cell--base">
-                    media
-                </div>
-
-                <div class="mediaContents__cell--base">
-                    media
-                </div>
-
-                <div class="mediaContents__cell--base">
-                    media
-                </div>
-
-                <div class="mediaContents__cell--base">
-                    media
-                </div>
-                
+                <?php if(have_posts()): while(have_posts()): the_post(); ?>
+                  <div <?php post_class( 'mediaContents__cell--base' ); ?>>
+                    <a href="<?php the_permalink(); ?>">
+                      <!--画像を追加-->
+                      <?php if( has_post_thumbnail() ): ?>
+                        <?php the_post_thumbnail('medium'); ?>
+                      <?php else: ?>
+                        <div class="mediaContents__cell--img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/media/mediaImage_2017_ISCA.png');"></div>
+                      <?php endif; ?>
+                      <div>
+                        <!--タイトル-->
+                        <div class="mediaContents__cell--title"><?php the_title(); ?></div>
+                        <!--投稿日を表示-->
+                        <span class="kiji-date">
+                          <i class="fas fa-pencil-alt"></i>
+                          <time datetime="<?php echo get_the_date( 'Y-m-d' ); ?>">
+                            <?php echo get_the_date(); ?>
+                          </time>
+                        </span>
+                        <!--抜粋-->
+                        <div class="mediaContents__cell--discription"><?php the_excerpt(); ?></div>
+                        <!--カテゴリ-->
+                        <?php if (!is_category()): ?>
+                          <?php if( has_category() ): ?>
+                          <div class="mediaContents__cell--linkBase">
+                            <a href="" class="mediaContents__cell--link"><?php $postcat=get_the_category(); echo $postcat[0]->name; ?></a>
+                          </div>
+                          <?php endif; ?>
+                        <?php endif; ?>
+                      </div>
+                    </a>
+                  </div>
+                <?php endwhile; endif; ?><!--ループ終了-->
                 
                 <div class="mediaContents__pageMenu--frame">
                     <div class="mediaContents__pageMenu--back">
