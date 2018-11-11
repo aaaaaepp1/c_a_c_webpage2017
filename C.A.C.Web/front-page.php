@@ -50,7 +50,7 @@ and open the template in the editor.
                     <div class="mainMenu__squareLeft" style="background-color: #bedf69;"></div>
                 </div>
                 <div class="mainMenu__discriptionRight" style="background-color: #bedf69;">
-                    <div class="mainMenu__discriptionLogo" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/top/mainMenu_logo_弊団体について.png');"></div>
+                    <div class="mainMenu__discriptionLogo" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/top/mainMenu_logo_弊団体について.png');"></div>
                     <div class="mainMenu__discriptionTitle">弊団体について</div>
                     <div class="mainMenu__discriptionSentence">弊団体についての説明をご覧いただけます</div>
                     <div class="mainMenu__discriptionMoreButton" id="mainMenu__aboutLinkMoreButton">more</div>
@@ -60,7 +60,7 @@ and open the template in the editor.
             <div class="mainMenu__projectLink" onclick="document.location.href = '<?php echo esc_url( home_url( 'index.php/category/project/' ) ); ?>'" onmouseout="hoverMainMenu('project', false);" onmouseover="hoverMainMenu('project', true);">
                 <div class="mainMenu__imageRight" id="mainMenu__projectLink" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/top/mainMenu_project.png');"></div>
                 <div class="mainMenu__discriptionLeft" style="background-color: #69abdf;">
-                    <div class="mainMenu__discriptionLogo" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/top/mainMenu_logo_プロジェクト.png');"></div>
+                    <div class="mainMenu__discriptionLogo" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/top/mainMenu_logo_プロジェクト.png');"></div>
                     <div class="mainMenu__discriptionTitle">プロジェクト</div>
                     <div class="mainMenu__discriptionSentence">弊団体の活動について紹介しています</div>
                     <div class="mainMenu__discriptionMoreButton" id="mainMenu__projectLinkMoreButton">more</div>
@@ -73,7 +73,7 @@ and open the template in the editor.
                     <div class="mainMenu__squareLeft" style="background-color: #d069df;"></div>
                 </div>
                 <div class="mainMenu__discriptionRight" style="background-color: #d069df;">
-                    <div class="mainMenu__discriptionLogo" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/top/mainMenu_logo_ダイアリー.png');"></div>
+                    <div class="mainMenu__discriptionLogo" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/top/mainMenu_logo_ダイアリー.png');"></div>
                     <div class="mainMenu__discriptionTitle">ダイアリー</div>
                     <div class="mainMenu__discriptionSentence">弊団体の普段の様子などを日記形式でご覧いただけます</div>
                     <div class="mainMenu__discriptionMoreButton" id="mainMenu__diaryLinkMoreButton">more</div>
