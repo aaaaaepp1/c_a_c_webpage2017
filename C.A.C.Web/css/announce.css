@@ -7,8 +7,6 @@ and open the template in the editor.
     Created on : 2017/05/28, 22:23:27
     Author     : okamoto
 */
-
-
 .announceBackgroundImage {
     position: fixed;
     width: 100%;
@@ -20,7 +18,190 @@ and open the template in the editor.
     background-position: center center;
 }
 
-.announce__background {
+/* keisuke ikeda */
+
+.announceContents__background {
+    position: relative;
+    width: 100%;
+    /*height: calc(245px * 5);*/
+    left: 0px;
+    top: 0px;
+    background-color: rgba(255, 255, 255, 1.0);
+}
+
+.announceContents__cell--frame {
+    position: relative;
+    width: 1000px;
+    /*height: calc(245px * 5);*/
+    left: calc(50% - 500px);
+    top: 45px;
+    padding-bottom: 50px;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);*/
+}
+
+.announceContents__cell--base {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 25px;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+}
+
+.announceContents__cell--img {
+    position: absolute;
+    width: 260px;
+    height: 200px;
+    top: -1px;
+    left: -1px;
+    background-position: center center;
+    background-size: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+}
+
+.announceContents__cell--title {
+    position: relative;
+    width: 720px;
+    left: 270px;
+    top: 10px;
+    font-family: "Rounded Mplus 1c";
+    color: #2d2d2d;
+    font-size: 25px;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;*/
+}
+
+.announceContents__cell--discription {
+    position: relative;
+    width: 720px;
+    left: 270px;
+    top: 20px;
+    font-family: "Rounded Mplus 1c";
+    color: #2d2d2d;
+    font-size: 15px;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;*/
+}
+
+.announceContents__cell--linkBase {
+    position: absolute;
+    width: 720px;
+    height: 30px;
+    left: 270px;
+    top: 160px;
+}
+
+.announceContents__cell--link {
+    display: inline-table;
+    width: 150px;
+    height: 30px;
+    margin-right: 5px;
+    
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    background-color: white;
+    
+    font-family: "Rounded Mplus 1c";
+    color: #0096ff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 27px;
+    
+    border-style: solid;
+    border-width: 1px;
+    border-color: #0096ff;
+    
+    transition: background-color ease-in-out 0.2s, color ease-in-out 0.2s;
+}
+.announceContents__cell--link:hover {
+    background-color: #0096ff;
+    color: white;
+}
+
+.announceContents__pageMenu--frame {
+    position: relative;
+    /*top: 1380px;*/
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.announceContents__pageMenu--back {
+    display: inline-block;
+    top: 0px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.announceContents__pageMenu--cellSquare {
+    display: table-cell;
+    position: relative;
+    background-color: rgba(0, 160, 233, 1.0);
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    font-family: "Rounded Mplus 1c";
+    text-align: center;
+    vertical-align: middle;
+    color: #2d2d2d;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+
+.announceContents__pageMenu--cellSquare:hover {
+    background-color: rgba(0, 160, 233, 0.7);
+}
+
+.announceContents__pageMenu--cellRec {
+    display: table-cell;
+    position: relative;
+    background-color: rgba(0, 160, 233, 1.0);
+    width: 70px;
+    height: 50px;
+    margin-left: 10px;
+    font-family: "Rounded Mplus 1c";
+    text-align: center;
+    vertical-align: middle;
+    color: #2d2d2d;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+.announceContents__pageMenu--cellRec:hover {
+    background-color: rgba(0, 160, 233, 0.7);
+}
+
+.announceContents__pageMenu--cellRecNotButton {
+    display: table-cell;
+    position: relative;
+    background-color: rgba(180, 180, 180, 1.0);
+    width: 70px;
+    height: 50px;
+    margin-left: 10px;
+    font-family: "Rounded Mplus 1c";
+    text-align: center;
+    vertical-align: middle;
+    color: #2d2d2d;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+
+.announceContents__noCongtentsMessage__background {
     position: relative;
     top: 0px;
     left: 0px;
@@ -30,13 +211,10 @@ and open the template in the editor.
     text-align: center;
 }
 
-.announce__noCongtentsMessage--frame {
+.announceContents__noCongtentsMessage--frame {
     position: relative;
     top: 100px;
     left: 0px;
     font-family: "Rounded Mplus 1c";
     color: #8c8b8b;
-/*    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(55, 55, 55);*/
 }

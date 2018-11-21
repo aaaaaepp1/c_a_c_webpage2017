@@ -42,9 +42,10 @@ and open the template in the editor.
         </div>
         
         <!-- end header, start main contents -->
-        
         <div class="mediaContents__background">
             <div class="mediaContents__cell--frame">
+                
+                <?php query_posts('posts_per_page=7&category_name=media'); ?>
                 
                 <?php if(have_posts()): while(have_posts()): the_post(); ?>
                   <div <?php post_class( 'mediaContents__cell--base' ); ?>>
@@ -53,32 +54,35 @@ and open the template in the editor.
                       <?php if( has_post_thumbnail() ): ?>
                         <?php the_post_thumbnail('medium'); ?>
                       <?php else: ?>
-                        <div class="mediaContents__cell--img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/media/mediaImage_2017_ISCA.png');"></div>
+                        <div class="mediaContents__cell--img" style="background-image: url('<?php echo get_template_directory_uri(); ?>);"></div>
                       <?php endif; ?>
                       <div>
                         <!--タイトル-->
                         <div class="mediaContents__cell--title"><?php the_title(); ?></div>
-                        <!--投稿日を表示-->
-                        <span class="kiji-date">
-                          <i class="fas fa-pencil-alt"></i>
-                          <time datetime="<?php echo get_the_date( 'Y-m-d' ); ?>">
+                        <!--抜粋--><!--投稿日を表示-->
+                        <div class="mediaContents__cell--discription">
+                            <time datetime="<?php echo get_the_date( 'Y-m-d' ); ?>">
                             <?php echo get_the_date(); ?>
-                          </time>
-                        </span>
-                        <!--抜粋-->
-                        <div class="mediaContents__cell--discription"><?php the_excerpt(); ?></div>
+                         　 </time>
+                            <?php the_excerpt(); ?>
+                        </div>
                         <!--カテゴリ-->
-                        <?php if (!is_category()): ?>
-                          <?php if( has_category() ): ?>
-                          <div class="mediaContents__cell--linkBase">
-                            <a href="" class="mediaContents__cell--link"><?php $postcat=get_the_category(); echo $postcat[0]->name; ?></a>
-                          </div>
-                          <?php endif; ?>
-                        <?php endif; ?>
+                        <div class="mediaContents__cell--linkBase">
+                            <a href="" class="mediaContents__cell--link"></a>
+                        </div>
                       </div>
                     </a>
                   </div>
-                <?php endwhile; endif; ?><!--ループ終了-->
+                <?php endwhile; ?>
+                <?php else : ?>
+                  <div class="mediaContents__noCongtentsMessage__background">
+                      <div class="mediaContents__noCongtentsMessage--frame">
+                          現在は掲載中のメディアは御座いません。
+                      </div>
+                  </div>
+                <?php endif; ?>
+                
+                <!--ループ終了-->
                 
                 <div class="mediaContents__pageMenu--frame">
                     <div class="mediaContents__pageMenu--back">
@@ -93,15 +97,11 @@ and open the template in the editor.
                         <a href="" class="mediaContents__pageMenu--cellSquare">..</a>
                         <a href="" class="mediaContents__pageMenu--cellRec">Next&gt;&gt;</a>
                     </div>
-                </div>
-                
+                </div>  
             </div>
         </div>
-        
         <!-- end main contents -->
-        
         <?php get_footer(); ?>
-        
         <?php wp_footer(); ?><!--システム・プラグイン用-->
         
     </body>

@@ -25,28 +25,13 @@ and open the template in the editor.
     </head>
     <body <?php body_class(); ?>>
         <footer>
-            
-           <!-- start footer -->
-
+            <!-- start footer -->
             <div class="footer">
                 <div class="footer__contents">
-                    <?php wp_nav_menu( array(
-                          'theme_location' => 'footer-nav',
-                          'menu' => 'ul',
-                          'menu_class' => '',
-                          'menu_id' => '',
-                          'container' => 'li',
-                          'container_class' => 'footer__contents--link',
-                          'container_id' => '',
-                          'fallback_cb' => ''
-                    ) ); ?>
                     <div class="footer__copyright">
                         Copyright &copy; Computer Applications Club All Rights Reserved.
                     </div>
                 </div>
             </div>
-
             <!-- end footer -->
-            
         </footer>
-
