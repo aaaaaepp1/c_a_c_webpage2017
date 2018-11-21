@@ -44,22 +44,8 @@ and open the template in the editor.
                 </p>
             </div>
         </div>
-<!--        <div class="subPageHeader" style="background-color: rgba(255, 255, 255, 0.8);">
-            <div class="subPageTitle" style="color: #545454;">
-                弊団体について
-            </div>
-        </div>
-        
-        <div class="aboutHeadSentence">
-            <div class="subPageSentence" style="color: #545454; top: 0px; font-weight: 300;">
-                チームで開発してる
-            </div>
-        </div>-->
-        
-        <!-- end header -->
         
         <!--start main contents -->
-        
         <div class="aboutProfile">
             <div class="aboutProfile__title">
                 <a class="aboutProfile__title--main">Profile</a> <a class="aboutProfile__title--sub">/団体情報</a>
@@ -161,15 +147,12 @@ and open the template in the editor.
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1372.9636644912239!2d135.75846449493372!3d35.06982978887928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a7dd7f2840af%3A0x7abbf5c27c908791!2z44CSNjAzLTgwNDcg5Lqs6YO95bqc5Lqs6YO95biC5YyX5Yy65LiK6LOA6IyC5pys5bGxIO-8l-WPt-mkqA!5e0!3m2!1sja!2sjp!4v1495968576950" width="500" height="530" frameborder="0" style="position: absolute; border:0; top: 50px; left: 0px" allowfullscreen></iframe>
                         <div class="aboutProfile__information--separator"></div>
                     </div>
-                    
                 </div>
             </div>
         </div>
         
         <!-- end main contents -->
-        
         <?php get_footer(); ?>
-        
         <?php wp_footer(); ?><!--システム・プラグイン用-->
         
     </body>

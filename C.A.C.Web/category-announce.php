@@ -42,21 +42,66 @@ and open the template in the editor.
         </div>
         
         <!-- end header, start main contents -->
-        
-        <!-- ここから宣伝コンテンツ -->
-        
-        <div class="announce__background">
-            <div class="announce__noCongtentsMessage--frame">
-                現在は掲載中のイベントが御座いません。
+        <div class="announceContents__background">
+            <div class="announceContents__cell--frame">
+                
+                <?php query_posts('posts_per_page=7&category_name=announce'); ?>
+                
+                <?php if(have_posts()): while(have_posts()): the_post(); ?>
+                  <div <?php post_class( 'announceContents__cell--base' ); ?>>
+                    <a href="<?php the_permalink(); ?>">
+                      <!--画像を追加-->
+                      <?php if( has_post_thumbnail() ): ?>
+                        <?php the_post_thumbnail('medium'); ?>
+                      <?php else: ?>
+                        <div class="announceContents__cell--img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/announce/announceImage_2017_ISCA.png');"></div>
+                      <?php endif; ?>
+                      <div>
+                        <!--タイトル-->
+                        <div class="announceContents__cell--title"><?php the_title(); ?></div>
+                        <!--抜粋--><!--投稿日を表示-->
+                        <div class="announceContents__cell--discription">
+                            <time datetime="<?php echo get_the_date( 'Y-m-d' ); ?>">
+                            <?php echo get_the_date(); ?>
+                         　 </time>
+                            <?php the_excerpt(); ?>
+                        </div>
+                        <!--カテゴリ-->
+                        <div class="announceContents__cell--linkBase">
+                            <a href="" class="announceContents__cell--link"></a>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                <?php endwhile; ?>
+                <?php else : ?>
+                  <div class="announceContents__noCongtentsMessage__background">
+                      <div class="announceContents__noCongtentsMessage--frame">
+                          現在は掲載中のメディアは御座いません。
+                      </div>
+                  </div>
+                <?php endif; ?>
+                
+                <!--ループ終了-->
+                
+                <div class="announceContents__pageMenu--frame">
+                    <div class="announceContents__pageMenu--back">
+                        <a class="announceContents__pageMenu--cellRecNotButton">1/20</a>
+                        <a class="announceContents__pageMenu--cellRec" style="background-color: #dddddd">&lt;&lt;Past</a>
+                        <a class="announceContents__pageMenu--cellSquare" style="background-color: #dddddd">1</a>
+                        <a href="" class="announceContents__pageMenu--cellSquare">2</a>
+                        <a href="" class="announceContents__pageMenu--cellSquare">3</a>
+                        <a href="" class="announceContents__pageMenu--cellSquare">4</a>
+                        <a href="" class="announceContents__pageMenu--cellSquare">5</a>
+                        <a href="" class="announceContents__pageMenu--cellSquare">6</a>
+                        <a href="" class="announceContents__pageMenu--cellSquare">..</a>
+                        <a href="" class="announceContents__pageMenu--cellRec">Next&gt;&gt;</a>
+                    </div>
+                </div>
             </div>
         </div>
-        
-        <!-- ここまで宣伝コンテンツ -->
-        
         <!-- end main contents -->
-        
         <?php get_footer(); ?>
-        
         <?php wp_footer(); ?><!--システム・プラグイン用-->
         
     </body>

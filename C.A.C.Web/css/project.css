@@ -229,3 +229,23 @@
     border-width: 2px;
     border-color: white;
 }
+
+/* keisuke ikeda */
+
+.projectContents__noCongtentsMessage__background {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding-bottom: calc(100% - 590px);
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.projectContents__noCongtentsMessage--frame {
+    position: relative;
+    top: 100px;
+    left: 0px;
+    font-family: "Rounded Mplus 1c";
+    color: #8c8b8b;
+}

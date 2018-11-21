@@ -38,7 +38,6 @@ and open the template in the editor.
         <?php get_header("top"); ?>
         
         <!-- start main contents -->
-
         <div class="mainTitle">
             <div class="mainTitle__titleEnglish">Beyond your Creation</div>
             <div class="mainTitle__titleJapanese">「作るだけ」で、終わらせない</div>
@@ -46,7 +45,7 @@ and open the template in the editor.
 
         <div class="mainMenu">
             <div class="mainMenu__aboutLink" onclick="document.location.href = '<?php echo esc_url( home_url( 'index.php/about/' ) ); ?>'" onmouseout="hoverMainMenu('about', false);" onmouseover="hoverMainMenu('about', true);">
-                <div class="mainMenu__imageLeft" id="mainMenu__aboutLink" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/top/mainMenu_about.png');">
+                <div class="mainMenu__imageLeft" id="mainMenu__aboutLink" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/top/mainMenu_about.png');">
                     <div class="mainMenu__squareLeft" style="background-color: #bedf69;"></div>
                 </div>
                 <div class="mainMenu__discriptionRight" style="background-color: #bedf69;">
@@ -58,7 +57,7 @@ and open the template in the editor.
             </div>
 
             <div class="mainMenu__projectLink" onclick="document.location.href = '<?php echo esc_url( home_url( 'index.php/category/project/' ) ); ?>'" onmouseout="hoverMainMenu('project', false);" onmouseover="hoverMainMenu('project', true);">
-                <div class="mainMenu__imageRight" id="mainMenu__projectLink" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/top/mainMenu_project.png');"></div>
+                <div class="mainMenu__imageRight" id="mainMenu__projectLink" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/top/mainMenu_project.png');"></div>
                 <div class="mainMenu__discriptionLeft" style="background-color: #69abdf;">
                     <div class="mainMenu__discriptionLogo" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/top/mainMenu_logo_プロジェクト.png');"></div>
                     <div class="mainMenu__discriptionTitle">プロジェクト</div>
@@ -69,7 +68,7 @@ and open the template in the editor.
             </div>
 
             <div class="mainMenu__diaryLink" onclick="document.location.href = '<?php echo esc_url( home_url( 'index.php/category/diary/' ) ); ?>'" onmouseout="hoverMainMenu('diary', false);" onmouseover="hoverMainMenu('diary', true);">
-                <div class="mainMenu__imageLeft" id="mainMenu__diaryLink" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/top/mainMenu_diary.png');">
+                <div class="mainMenu__imageLeft" id="mainMenu__diaryLink" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/top/mainMenu_diary.png');">
                     <div class="mainMenu__squareLeft" style="background-color: #d069df;"></div>
                 </div>
                 <div class="mainMenu__discriptionRight" style="background-color: #d069df;">
@@ -102,8 +101,7 @@ and open the template in the editor.
                     <div class="mainDiary__diary--title">タイトル</div>
                     <div class="mainDiary__diary--sentence">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
                 </div>
-
-                <a class="mainDiary__moreButton" href="html/diary.html">more</a>
+                <a class="mainDiary__moreButton" href="<?php echo esc_url( home_url( 'index.php/category/diary/' ) ); ?>">more</a>
             </div>
             <div class="mainDiary__twitter">
                 <div class="mainDiary__title">Twitter</div>
@@ -116,9 +114,7 @@ and open the template in the editor.
         </div>
 
         <!-- end main contents -->
-        
         <?php get_footer(); ?>
-        
         <?php wp_footer(); ?><!--システム・プラグイン用-->
         
     </body>

@@ -42,62 +42,22 @@ and open the template in the editor.
         </div>
         
         <!-- end header, start main contents -->
-        
         <div class="projectContents__background">
             <div class="projectContents__background--frame">
                 
-                <a href="" class="projectContents__cell--base" onmouseover="hoverProjectContents(true, this);" onmouseout="hoverProjectContents(false, this);">
-                    <div class="projectContents__cell--imgBlur" style="background-image: url('../img/project/projectImage_20170721_MikuLive.png');">
-                        <div class="projectContents__cell--readMoreButton">ReadMore</div>
-                        <div class="projectContents__cell--img" style="background-image: url('../img/project/projectImage_20170721_MikuLive.png');"></div>
-                    </div>
-                    <div class="projectContents__cell--title">
-                        Miku 3D LIVE
-                    </div>
-                    <div class="projectContents__cell--discription">
-                        2017/ 3D hologram live stage
-                    </div>
-                </a>
-
-                <a href="" class="projectContents__cell--base" onmouseover="hoverProjectContents(true, this);" onmouseout="hoverProjectContents(false, this);">
-                    <div class="projectContents__cell--imgBlur" style="background-image: url('../img/project/projectImage_20170721_EscapeVR.png');">
-                        <div class="projectContents__cell--readMoreButton">ReadMore</div>
-                        <div class="projectContents__cell--img" style="background-image: url('../img/project/projectImage_20170721_EscapeVR.png');"></div>
-                    </div>
-                    <div class="projectContents__cell--title">
-                        EscapeVR
-                    </div>
-                    <div class="projectContents__cell--discription">
-                        2016/ Escape game in the VR space
-                    </div>
-                </a>
-
-                <a href="" class="projectContents__cell--base" onmouseover="hoverProjectContents(true, this);" onmouseout="hoverProjectContents(false, this);">
-                    <div class="projectContents__cell--imgBlur" style="background-image: url('../img/project/projectImage_20170721_MikuLive.png');">
-                        <div class="projectContents__cell--readMoreButton">ReadMore</div>
-                        <div class="projectContents__cell--img" style="background-image: url('../img/project/projectImage_20170721_MikuLive.png');"></div>
-                    </div>
-                    <div class="projectContents__cell--title">
-                        Miku 3D LIVE
-                    </div>
-                    <div class="projectContents__cell--discription">
-                        2017/ 3D hologram live stage
-                    </div>
-                </a>
-
-                <a href="" class="projectContents__cell--base" onmouseover="hoverProjectContents(true, this);" onmouseout="hoverProjectContents(false, this);">
-                    <div class="projectContents__cell--imgBlur" style="background-image: url('../img/project/projectImage_20170721_MikuLive.png');">
-                        <div class="projectContents__cell--readMoreButton">ReadMore</div>
-                        <div class="projectContents__cell--img" style="background-image: url('../img/project/projectImage_20170721_MikuLive.png');"></div>
-                    </div>
-                    <div class="projectContents__cell--title">
-                        Miku 3D LIVE
-                    </div>
-                    <div class="projectContents__cell--discription">
-                        2017/ 3D hologram live stage
-                    </div>
-                </a>
-
+                <?php query_posts('posts_per_page=12&category_name=project'); ?>
+                
+                <?php if(have_posts()): while(have_posts()): the_post(); ?>
+                    
+                <?php endwhile; ?>
+                <?php else : ?>
+                  <div class="projectContents__noCongtentsMessage__background">
+                      <div class="projectContents__noCongtentsMessage--frame">
+                          現在は掲載中のプロジェクトは御座いません。
+                      </div>
+                  </div>
+                <?php endif; ?>
+                
                 <div class="projectContents__pageMenu--frame">
                     <div class="projectContents__pageMenu--back">
                         <a class="projectContents__pageMenu--cellRecNotButton">1/20</a>
@@ -112,14 +72,10 @@ and open the template in the editor.
                         <a href="" class="projectContents__pageMenu--cellRec">Next&gt;&gt;</a>
                     </div>
                 </div>
-
             </div>
         </div>
-        
         <!-- end main contents -->
-        
         <?php get_footer(); ?>
-        
         <?php wp_footer(); ?><!--システム・プラグイン用-->
         
     </body>
