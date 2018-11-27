@@ -39,8 +39,7 @@ and open the template in the editor.
             </div>
             <div class="subPageSentence" style="color: #545454;">
                 <p style="margin-top: 50px; width: 1000px; text-align: justify; margin-left: calc(50% - 500px);">
-                    弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、弊団弊団体は、弊団体は、弊団体は、弊団体は、弊団体は、
-                    なんです。
+                    弊団体は、1965年4月に京都産業大学創立とともに創設された歴史ある部活動である。「電子計算機」のプログラミングオペレーションの知識を深め、種々の電子計算機により技術及びさまざまな応用問題を分析、研究すると同時に学生間の親睦及び社会に貢献する人間を形成する事を目的とし、活動している。また、近年ではアートやミュージックなどの分野へのアプローチも行なっており多様な創作活動が盛んである。
                 </p>
             </div>
         </div>
@@ -62,7 +61,7 @@ and open the template in the editor.
                         <div class="aboutProfile__information--separator"></div>
                     </div>
                     
-                    <div class="aboutProfile__information--cell" style="height: 730px;">
+                    <div class="aboutProfile__information--cell" style="height: 760px;">
                         <div class="aboutProfile__information--title">
                             活動内容
                         </div>
@@ -116,14 +115,15 @@ and open the template in the editor.
                         </div>
                         <div class="aboutProfile__information--separator"></div>
                     </div>
-                    <div class="aboutProfile__information--cell" style="height: 90px;">
+                    <div class="aboutProfile__information--cell" style="height: 120px;">
                         <div class="aboutProfile__information--title">
                             活動時間･場所
                         </div>
                         <div class="aboutProfile__information--sentence">
                             毎週水曜日 13時15分～14時45分 最大20時まで<br>
+                            &emsp;10号館2F 10201情報処理教室<br>
                             毎週木曜日 16時45分～18時15分 最大20時まで<br>
-                            10号館2F 10204情報処理教室
+                            &emsp;10号館2F 10205情報処理教室
                         </div>
                         <div class="aboutProfile__information--separator"></div>
                     </div>
