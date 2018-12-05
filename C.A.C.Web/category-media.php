@@ -51,11 +51,18 @@ and open the template in the editor.
                 <div <?php post_class( 'mediaContents__cell--base' ); ?>>   
                     <!--画像を追加-->
                     <?php if( has_post_thumbnail() ): ?>
-                    <div class="mediaContents__cell--img">
-                        <?php the_post_thumbnail(array( 260, 200 ) ); ?>
-                    </div>
+                    <?php 
+                    the_post_thumbnail(
+                        [
+                            260, 200
+                        ],
+                        [
+                            'class' => "mediaContents__cell--img"
+                        ]
+                    ); 
+                    ?>   
                     <?php else: ?>
-                    <div class="mediaContents__cell--img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/media/NoImage.jpg');"></div>
+                        <div class="mediaContents__cell--img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/media/NoImage.jpg');"></div>
                     <?php endif; ?>
                     <div>
                         <!--タイトル-->

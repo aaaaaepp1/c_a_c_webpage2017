@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>ダイアリー | C.A.C. | 京都産業大学 文化団体連盟所属 電子計算機応用部</title>
+        <title>ダイアリー＿行事 | C.A.C. | 京都産業大学 文化団体連盟所属 電子計算機応用部</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
@@ -69,8 +69,8 @@ and open the template in the editor.
             <div class="eachDiaryContents--frame">
                 
                 <div class="eachDiaryContents--sentence">
-                    <h2 class="diary">最新記事一覧</h2>
-                    <?php query_posts('posts_per_page=12&category_name=diary'); ?>
+                    <h2 class="diary">「行事」記事一覧</h2>
+                    <?php query_posts('posts_per_page=12&category_name=diary-event'); ?>
                     
                     <?php if(have_posts()): while(have_posts()): the_post(); ?>
                     <div <?php post_class( "diaryContents__cell--frame" ); ?>> 
@@ -116,7 +116,7 @@ and open the template in the editor.
                     <?php else : ?>
                     <div class="diaryContents__noCongtentsMessage__background">
                         <div class="diaryContents__noCongtentsMessage--frame">
-                            現在は掲載中のダイアリーは御座いません。
+                            現在は掲載中の「行事」は御座いません。
                         </div>
                     </div>
                     <?php endif; ?>
@@ -138,6 +138,7 @@ and open the template in the editor.
                 </div>
                 
                 <?php get_sidebar(); ?>
+                
             </div>
             
         </div>   
