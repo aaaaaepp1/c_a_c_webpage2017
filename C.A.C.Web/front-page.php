@@ -84,23 +84,43 @@ and open the template in the editor.
             <div class="mainDiary__separater"></div>
             <div class="mainDiary__diary">
                 <div class="mainDiary__title">Diary</div>
+                <?php query_posts('posts_per_page=3&category_name=diary'); ?>
+                <?php if(have_posts()): while(have_posts()): the_post(); ?>
                 <div class="mainDiary__diary--contents">
-                    <div class="mainDiary__diary--logo">a</div>
-                    <div class="mainDiary__diary--title">タイトル</div>
-                    <div class="mainDiary__diary--sentence">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
-                    <div class="mainDiary__diary--separator"></div>
+                    <?php if( has_post_thumbnail() ): ?>   
+                        <?php 
+                        the_post_thumbnail(
+                            [ 
+                                200, 200 
+                            ],
+                            [
+                                'class' => "mainDiary__diary--logo"
+                            ]
+                         ); 
+                        ?>         
+                    <?php else: ?>
+                        <img class="mainDiary__diary--logo" src="<?php echo get_template_directory_uri(); ?>/img/top/NoImage.jpg"/>
+                    <?php endif; ?>
+                    <div class="mainDiary__diary--title">
+                        <?php the_title(); ?>
+                    </div>
+                    <div class="mainDiary__diary--sentence">
+                        <?php the_excerpt(); ?>
+                    </div>
+                    <?php $i = 0; ?>
+                    <?php if( $i < 2 ): ?>
+                        <div class="mainDiary__diary--separator"></div>
+                        <?php $i = $i + 1; ?>
+                    <?php endif; ?>
                 </div>
-                <div class="mainDiary__diary--contents">
-                    <div class="mainDiary__diary--logo">a</div>
-                    <div class="mainDiary__diary--title">タイトル</div>
-                    <div class="mainDiary__diary--sentence">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
-                    <div class="mainDiary__diary--separator"></div>
+                <?php endwhile; ?>
+                <?php else : ?>
+                <div class="diaryContents__noCongtentsMessage__background">
+                    <div class="diaryContents__noCongtentsMessage--frame">
+                        現在は掲載中のダイアリーは御座いません。
+                    </div>
                 </div>
-                <div class="mainDiary__diary--contents">
-                    <div class="mainDiary__diary--logo">a</div>
-                    <div class="mainDiary__diary--title">タイトル</div>
-                    <div class="mainDiary__diary--sentence">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
-                </div>
+                <?php endif; ?>
                 <a class="mainDiary__moreButton" href="<?php echo esc_url( home_url( 'index.php/category/diary/' ) ); ?>">more</a>
             </div>
             <div class="mainDiary__twitter">

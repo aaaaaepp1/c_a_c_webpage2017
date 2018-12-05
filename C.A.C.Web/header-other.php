@@ -30,16 +30,20 @@ and open the template in the editor.
             <div class="miniHeader">
                 <div class="miniHeader__cacLogo" style="cursor: pointer;" onclick="location.href ="<?php echo esc_url( home_url( '/' ) ); ?>" ></div>
                 <div style="text-align: right; margin-right: 30px >
-                    <?php wp_nav_menu( array(
-                        'theme_location' => 'header-nav',
-                        'menu' => '',
-                        'menu_class' => '',
-                        'menu_id' => 'menu',
-                        'container' => '',
-                        'container_class' => 'miniHeader__Link',
-                        'container_id' => '',
-                        'fallback_cb' => ''
-                    ) ); ?>
+                    <?php 
+                    wp_nav_menu(
+                        [
+                            'theme_location' => 'header-nav',
+                            'menu' => '',
+                            'menu_class' => '',
+                            'menu_id' => 'menu',
+                            'container' => '',
+                            'container_class' => 'miniHeader__Link',
+                            'container_id' => '',
+                            'fallback_cb' => ''
+                        ]
+                     ); 
+                    ?>
                 </div>
             </div>
         </header>

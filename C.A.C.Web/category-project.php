@@ -115,6 +115,7 @@ and open the template in the editor.
                     </div>
                 </div>
             </div>
+            
         </div>
         <!-- end main contents -->
         <?php get_footer(); ?>

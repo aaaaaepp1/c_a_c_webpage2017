@@ -40,14 +40,14 @@ and open the template in the editor.
                     <?php 
                     wp_nav_menu(
                         [
-                          'theme_location' => 'header-nav',
-                          'menu' => 'ul',
-                          'menu_class' => 'collapse navbar-collapse justify-content-center',
-                          'menu_id' => 'menu',
-                          'container' => 'li',
-                          'container_class' => 'header__Link',
-                          'container_id' => '',
-                          'fallback_cb' => ''
+                            'theme_location' => 'header-nav',
+                            'menu' => 'ul',
+                            'menu_class' => 'collapse navbar-collapse justify-content-center',
+                            'menu_id' => 'menu',
+                            'container' => 'li',
+                            'container_class' => 'header__Link',
+                            'container_id' => '',
+                            'fallback_cb' => ''
                         ] 
                     ); 
                     ?>
