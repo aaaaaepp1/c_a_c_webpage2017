@@ -12,6 +12,13 @@ and open the template in the editor.
         
         <!-- links for css-->
         <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" />
+        
+        <!-- links for JavaScript-->
+        <script src="../javascript/main.js" type="text/javascript"></script>
+        <script src="../javascript/project.js" type="text/javascript"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="../javascript/jquery.easing.1.3.js" type="text/javascript"></script>
+        <script src="../javascript/jqueryColorPlugin.js" type="text/javascript"></script>
 
         <!-- import fonts -->
         <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
@@ -49,6 +56,41 @@ and open the template in the editor.
                 
                 <?php if(have_posts()): while(have_posts()): the_post(); ?>
                     
+                <a href="" <?php post_class( "projectContents__cell--base" ); ?>onmouseover="hoverProjectContents(true, this);" onmouseout="hoverProjectContents(false, this);">
+                    <!--画像を追加-->
+                    <?php if( has_post_thumbnail() ): ?>
+                        <div class="projectContents__cell--imgBlur" style="background-image: url(<?php the_post_thumbnail_url(array( 495, 380 ) ); ?>);">
+                            <div class="projectContents__cell--readMoreButton">ReadMore</div>
+                            <div class="projectContents__cell--img" style="background-image: url(<?php the_post_thumbnail_url(array( 495, 380 ) ); ?>);"></div>
+                        </div>
+                    <?php else: ?>
+                        <div class="projectContents__cell--imgBlur" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/project/NoImage.jpg');">
+                            <div class="projectContents__cell--readMoreButton">ReadMore</div>
+                            <div class="projectContents__cell--img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/project/NoImage.jpg');"></div>
+                        </div>
+                    <?php endif; ?>
+                    <!--タイトル-->
+                    <div class="projectContents__cell--title" style="text-decoration:none;">
+                        <?php the_title(); ?>
+                    </div>
+                    <!--投稿日を表示-->
+                    <div class="projectContents__cell--discription"　style="text-decoration:none;">
+                        <time datetime="<?php echo get_the_date( 'Y' ); ?>">
+                            <?php echo get_the_date( 'Y'); ?>
+                        </time>
+                        <nobr>/</nobr>
+                        <?php if(has_tag()==true) : ?>
+                            <?php
+                            foreach((get_the_tags()) as $tag) {
+                            echo $tag->name . ' ';
+                            }
+                            ?>
+                        <?php else : ?>
+                            <nobr>--</nobr>
+                        <?php endif; ?>
+                    </div>
+                </a>
+                
                 <?php endwhile; ?>
                 <?php else : ?>
                   <div class="projectContents__noCongtentsMessage__background">

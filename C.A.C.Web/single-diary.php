@@ -6,8 +6,18 @@ and open the template in the editor.
 -->
 <html>
     <head>
+        <title>C.A.C. | 京都産業大学 文化団体連盟所属 電子計算機応用部</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- links for css-->
+        <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" />
+        
+        <!-- links for javascript -->
+        <script src="js/main.js" type="text/javascript"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+        <script src="js/jqueryColorPlugin.js" type="text/javascript"></script>
 
         <!-- import fonts -->
         <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
@@ -23,38 +33,19 @@ and open the template in the editor.
         <?php wp_head(); ?><!--システム・プラグイン用-->
         
     </head>
-    <body <?php body_class(); ?>>
-        <header>
-
-            <!-- start header -->
-
-           <div class="header">
-                <span>
-                    <div class="header__cacDiscription">京都産業大学　文化団体連盟　電子計算機応用部</div>
-                    <div class="header__cacLogo"></div>
-                </span>
-                <nav class="navbar navbar-light bg-white navbar-expand-md" style="padding: 0px">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <?php 
-                    wp_nav_menu(
-                        [
-                          'theme_location' => 'header-nav',
-                          'menu' => 'ul',
-                          'menu_class' => 'collapse navbar-collapse justify-content-center',
-                          'menu_id' => 'menu',
-                          'container' => 'li',
-                          'container_class' => 'header__Link',
-                          'container_id' => '',
-                          'fallback_cb' => ''
-                        ] 
-                    ); 
-                    ?>
-                </nav>
-            </div>
-
-            <!-- end header -->
-            
-        </header>
-
+    <body>
+        
+        <?php get_header("other"); ?>
+        
+        <!-- start main contents -->
+        
+        
+        
+        <!-- end main contents -->
+        
+        <?php get_footer(); ?>
+        
+        <?php wp_footer(); ?><!--システム・プラグイン用-->
+        
+    </body>
+</html>

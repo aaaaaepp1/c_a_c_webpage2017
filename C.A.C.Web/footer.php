@@ -25,7 +25,9 @@ and open the template in the editor.
     </head>
     <body <?php body_class(); ?>>
         <footer>
+            
             <!-- start footer -->
+            
             <div class="footer">
                 <div class="footer__contents">
                     <div class="footer__copyright">
@@ -33,5 +35,7 @@ and open the template in the editor.
                     </div>
                 </div>
             </div>
+            
             <!-- end footer -->
+            
         </footer>
